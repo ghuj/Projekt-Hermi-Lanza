@@ -1174,6 +1174,19 @@
 		"oAP": "\/robots.txt",
 		"oF": 0
 		},
+	"\/sass.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/sass.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sitemap.xml": {
 		"cB": 0,
 		"ft": 8192,
