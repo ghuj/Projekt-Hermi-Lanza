@@ -16,1123 +16,1123 @@
 		"oAP": "\/404.html",
 		"oF": 0
 		},
-	"\/assets\/css\/lightbox-min.css": {
+	"\/build\/assets\/css\/lightbox-min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/lightbox-min-min.css",
+		"oAP": "\/build\/assets\/css\/lightbox-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/css\/lightbox.css": {
+	"\/build\/assets\/css\/lightbox.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/lightbox-min.css",
+		"oAP": "\/build\/assets\/css\/lightbox-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/css\/main-min.css": {
+	"\/build\/assets\/css\/main-min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/main-min-min.css",
+		"oAP": "\/build\/assets\/css\/main-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/css\/main.css": {
+	"\/build\/assets\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/main-min.css",
+		"oAP": "\/build\/assets\/css\/main-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/img\/#_box_mitte.png": {
+	"\/build\/assets\/img\/#_box_mitte.png": {
 		"ft": 32768,
 		"iS": 2920448,
 		"oA": 0,
-		"oAP": "\/assets\/img\/#_box_mitte.png",
+		"oAP": "\/build\/assets\/img\/#_box_mitte.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/#ico_phone.svg": {
+	"\/build\/assets\/img\/#ico_phone.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/assets\/img\/#ico_phone.svg",
+		"oAP": "\/build\/assets\/img\/#ico_phone.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/img\/00_box_mitte.png": {
+	"\/build\/assets\/img\/00_box_mitte.png": {
 		"ft": 32768,
 		"iS": 472578,
 		"oA": 0,
-		"oAP": "\/assets\/img\/00_box_mitte.png",
+		"oAP": "\/build\/assets\/img\/00_box_mitte.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/_ico_chat.jpg": {
+	"\/build\/assets\/img\/_ico_chat.jpg": {
 		"ft": 16384,
 		"iS": 531,
 		"jF": 0,
 		"oA": 1,
-		"oAP": "\/assets\/img\/_ico_chat.jpg",
+		"oAP": "\/build\/assets\/img\/_ico_chat.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/_ico_phone.jpg": {
+	"\/build\/assets\/img\/_ico_phone.jpg": {
 		"ft": 16384,
 		"iS": 557,
 		"jF": 0,
 		"oA": 1,
-		"oAP": "\/assets\/img\/_ico_phone.jpg",
+		"oAP": "\/build\/assets\/img\/_ico_phone.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/_ico_pin.jpg": {
+	"\/build\/assets\/img\/_ico_pin.jpg": {
 		"ft": 16384,
 		"iS": 527,
 		"jF": 0,
 		"oA": 1,
-		"oAP": "\/assets\/img\/_ico_pin.jpg",
+		"oAP": "\/build\/assets\/img\/_ico_pin.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/box_mitte.png": {
+	"\/build\/assets\/img\/box_mitte.png": {
 		"ft": 32768,
 		"iS": 549023,
 		"oA": 0,
-		"oAP": "\/assets\/img\/box_mitte.png",
+		"oAP": "\/build\/assets\/img\/box_mitte.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/favicon.ico": {
+	"\/build\/assets\/img\/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/assets\/img\/favicon.ico",
+		"oAP": "\/build\/assets\/img\/favicon.ico",
 		"oF": 0
 		},
-	"\/assets\/img\/galerie\/bilder\/image-38.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-38.jpg": {
 		"ft": 16384,
 		"iS": 60349,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-38.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-38.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-39.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-39.jpg": {
 		"ft": 16384,
 		"iS": 1367484,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-39.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-39.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-41.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-41.jpg": {
 		"ft": 16384,
 		"iS": 68519,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-41.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-41.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-42.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-42.jpg": {
 		"ft": 16384,
 		"iS": 59219,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-42.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-42.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-43.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-43.jpg": {
 		"ft": 16384,
 		"iS": 87602,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-43.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-43.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-44.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-44.jpg": {
 		"ft": 16384,
 		"iS": 38782,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-44.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-44.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-45.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-45.jpg": {
 		"ft": 16384,
 		"iS": 96294,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-45.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-45.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-46.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-46.jpg": {
 		"ft": 16384,
 		"iS": 47059,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-46.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-46.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-47.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-47.jpg": {
 		"ft": 16384,
 		"iS": 40063,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-47.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-47.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-48.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-48.jpg": {
 		"ft": 16384,
 		"iS": 72707,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-48.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-48.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-49.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-49.jpg": {
 		"ft": 16384,
 		"iS": 49945,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-49.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-49.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-50.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-50.jpg": {
 		"ft": 16384,
 		"iS": 77377,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-50.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-50.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-51.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-51.jpg": {
 		"ft": 16384,
 		"iS": 44180,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-51.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-51.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-52.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-52.jpg": {
 		"ft": 16384,
 		"iS": 64615,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-52.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-52.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-53.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-53.jpg": {
 		"ft": 16384,
 		"iS": 54146,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-53.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-53.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-54.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-54.jpg": {
 		"ft": 16384,
 		"iS": 73765,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-54.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-54.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/image-55.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/image-55.jpg": {
 		"ft": 16384,
 		"iS": 49131,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/image-55.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/image-55.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/No21_04b.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/No21_04b.jpg": {
 		"ft": 16384,
 		"iS": 170970,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/No21_04b.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/No21_04b.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/No25_08b.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/No25_08b.jpg": {
 		"ft": 16384,
 		"iS": 148009,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/No25_08b.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/No25_08b.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/No26_09b.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/No26_09b.jpg": {
 		"ft": 16384,
 		"iS": 48262,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/No26_09b.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/No26_09b.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/No28_11b.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/No28_11b.jpg": {
 		"ft": 16384,
 		"iS": 38782,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/No28_11b.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/No28_11b.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/No34_16b.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/No34_16b.jpg": {
 		"ft": 16384,
 		"iS": 96388,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/No34_16b.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/No34_16b.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/No35_17b.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/No35_17b.jpg": {
 		"ft": 16384,
 		"iS": 35497,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/No35_17b.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/No35_17b.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/bilder\/No37_19b.jpg": {
+	"\/build\/assets\/img\/galerie\/bilder\/No37_19b.jpg": {
 		"ft": 16384,
 		"iS": 59219,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/bilder\/No37_19b.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/bilder\/No37_19b.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/00_thumb-75.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/00_thumb-75.jpg": {
 		"ft": 16384,
 		"iS": 11090,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/00_thumb-75.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/00_thumb-75.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-57.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-57.jpg": {
 		"ft": 16384,
 		"iS": 169680,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-57.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-57.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-58.JPG": {
+	"\/build\/assets\/img\/galerie\/image\/image-58.JPG": {
 		"ft": 16384,
 		"iS": 202254,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-58.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-58.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-59.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-59.jpg": {
 		"ft": 16384,
 		"iS": 136817,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-59.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-59.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-60.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-60.jpg": {
 		"ft": 16384,
 		"iS": 111252,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-60.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-60.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-61.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-61.jpg": {
 		"ft": 16384,
 		"iS": 141784,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-61.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-61.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-62.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-62.jpg": {
 		"ft": 16384,
 		"iS": 186547,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-62.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-62.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-63.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-63.jpg": {
 		"ft": 16384,
 		"iS": 116941,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-63.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-63.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-64.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-64.jpg": {
 		"ft": 16384,
 		"iS": 78895,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-64.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-64.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-65.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-65.jpg": {
 		"ft": 16384,
 		"iS": 145691,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-65.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-65.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-66.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-66.jpg": {
 		"ft": 16384,
 		"iS": 225749,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-66.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-66.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-67.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-67.jpg": {
 		"ft": 16384,
 		"iS": 187240,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-67.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-67.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-68.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-68.jpg": {
 		"ft": 16384,
 		"iS": 177117,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-68.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-68.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-69.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-69.jpg": {
 		"ft": 16384,
 		"iS": 160353,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-69.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-69.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-70.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-70.jpg": {
 		"ft": 16384,
 		"iS": 132489,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-70.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-70.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-71.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-71.jpg": {
 		"ft": 16384,
 		"iS": 110724,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-71.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-71.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-72.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-72.jpg": {
 		"ft": 16384,
 		"iS": 67255,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-72.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-72.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-73.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-73.jpg": {
 		"ft": 16384,
 		"iS": 100173,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-73.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-73.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-74.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-74.jpg": {
 		"ft": 16384,
 		"iS": 81641,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-74.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-74.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-75.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-75.jpg": {
 		"ft": 16384,
 		"iS": 1139409,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-75.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-75.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-76.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-76.jpg": {
 		"ft": 16384,
 		"iS": 343056,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-76.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-76.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-77.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-77.jpg": {
 		"ft": 16384,
 		"iS": 1001198,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-77.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-77.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/image-78.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/image-78.jpg": {
 		"ft": 16384,
 		"iS": 1440234,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/image-78.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/image-78.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-57 .jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-57 .jpg": {
 		"ft": 16384,
 		"iS": 12212,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-57 .jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-57 .jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-58.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-58.jpg": {
 		"ft": 16384,
 		"iS": 9788,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-58.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-58.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-59.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-59.jpg": {
 		"ft": 16384,
 		"iS": 4975,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-59.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-59.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-60.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-60.jpg": {
 		"ft": 16384,
 		"iS": 8984,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-60.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-60.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-61.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-61.jpg": {
 		"ft": 16384,
 		"iS": 8986,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-61.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-61.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-62.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-62.jpg": {
 		"ft": 16384,
 		"iS": 9061,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-62.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-62.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-63.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-63.jpg": {
 		"ft": 16384,
 		"iS": 8703,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-63.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-63.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-64.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-64.jpg": {
 		"ft": 16384,
 		"iS": 7396,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-64.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-64.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-65.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-65.jpg": {
 		"ft": 16384,
 		"iS": 9032,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-65.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-65.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-66.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-66.jpg": {
 		"ft": 16384,
 		"iS": 10391,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-66.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-66.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-67.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-67.jpg": {
 		"ft": 16384,
 		"iS": 10027,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-67.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-67.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-68.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-68.jpg": {
 		"ft": 16384,
 		"iS": 10131,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-68.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-68.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-69.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-69.jpg": {
 		"ft": 16384,
 		"iS": 9607,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-69.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-69.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-70.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-70.jpg": {
 		"ft": 16384,
 		"iS": 10445,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-70.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-70.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-71.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-71.jpg": {
 		"ft": 16384,
 		"iS": 11726,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-71.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-71.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-72.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-72.jpg": {
 		"ft": 16384,
 		"iS": 9791,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-72.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-72.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-73.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-73.jpg": {
 		"ft": 16384,
 		"iS": 9764,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-73.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-73.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-74.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-74.jpg": {
 		"ft": 16384,
 		"iS": 7483,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-74.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-74.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-75.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-75.jpg": {
 		"ft": 16384,
 		"iS": 11372,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-75.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-75.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-76.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-76.jpg": {
 		"ft": 16384,
 		"iS": 5834,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-76.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-76.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-77.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-77.jpg": {
 		"ft": 16384,
 		"iS": 12048,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-77.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-77.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/image\/thumb-78.jpg": {
+	"\/build\/assets\/img\/galerie\/image\/thumb-78.jpg": {
 		"ft": 16384,
 		"iS": 9832,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/image\/thumb-78.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/image\/thumb-78.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/lightbox\/close.png": {
+	"\/build\/assets\/img\/galerie\/lightbox\/close.png": {
 		"ft": 32768,
 		"iS": 280,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/lightbox\/close.png",
+		"oAP": "\/build\/assets\/img\/galerie\/lightbox\/close.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/lightbox\/loading.gif": {
+	"\/build\/assets\/img\/galerie\/lightbox\/loading.gif": {
 		"ft": 4194304,
 		"iS": 8476,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/lightbox\/loading.gif",
+		"oAP": "\/build\/assets\/img\/galerie\/lightbox\/loading.gif",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/assets\/img\/galerie\/lightbox\/next.png": {
+	"\/build\/assets\/img\/galerie\/lightbox\/next.png": {
 		"ft": 32768,
 		"iS": 1107,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/lightbox\/next.png",
+		"oAP": "\/build\/assets\/img\/galerie\/lightbox\/next.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/lightbox\/prev.png": {
+	"\/build\/assets\/img\/galerie\/lightbox\/prev.png": {
 		"ft": 32768,
 		"iS": 1111,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/lightbox\/prev.png",
+		"oAP": "\/build\/assets\/img\/galerie\/lightbox\/prev.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/00_No25_08a.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/00_No25_08a.jpg": {
 		"ft": 16384,
 		"iS": 18545,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/00_No25_08a.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/00_No25_08a.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/No21_04a.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/No21_04a.jpg": {
 		"ft": 16384,
 		"iS": 19878,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/No21_04a.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/No21_04a.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/No25_08a.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/No25_08a.jpg": {
 		"ft": 16384,
 		"iS": 11779,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/No25_08a.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/No25_08a.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/No26_09a.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/No26_09a.jpg": {
 		"ft": 16384,
 		"iS": 14967,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/No26_09a.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/No26_09a.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/No28_11a.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/No28_11a.jpg": {
 		"ft": 16384,
 		"iS": 15088,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/No28_11a.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/No28_11a.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/No34_16a.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/No34_16a.jpg": {
 		"ft": 16384,
 		"iS": 16550,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/No34_16a.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/No34_16a.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/No35_17a.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/No35_17a.jpg": {
 		"ft": 16384,
 		"iS": 14611,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/No35_17a.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/No35_17a.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/No37_19a.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/No37_19a.jpg": {
 		"ft": 16384,
 		"iS": 14330,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/No37_19a.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/No37_19a.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/thumb-35.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/thumb-35.jpg": {
 		"ft": 16384,
 		"iS": 14445,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-35.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/thumb-35.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/thumb-36.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/thumb-36.jpg": {
 		"ft": 16384,
 		"iS": 14952,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-36.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/thumb-36.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/thumb-38.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/thumb-38.jpg": {
 		"ft": 16384,
 		"iS": 15058,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-38.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/thumb-38.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/thumb-39.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/thumb-39.jpg": {
 		"ft": 16384,
 		"iS": 14330,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-39.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/thumb-39.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/thumb-40.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/thumb-40.jpg": {
 		"ft": 16384,
 		"iS": 15073,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-40.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/thumb-40.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/thumb-41.jpg": {
+	"\/build\/assets\/img\/galerie\/thumb\/thumb-41.jpg": {
 		"ft": 16384,
 		"iS": 15088,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-41.jpg",
+		"oAP": "\/build\/assets\/img\/galerie\/thumb\/thumb-41.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/content\/ausstellung.html": {
+	"\/build\/content\/ausstellung.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/content\/ausstellung.html",
+		"oAP": "\/build\/content\/ausstellung.html",
 		"oF": 0
 		},
-	"\/content\/biografie.html": {
+	"\/build\/content\/biografie.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/content\/biografie.html",
+		"oAP": "\/build\/content\/biografie.html",
 		"oF": 0
 		},
-	"\/content\/galerie.html": {
+	"\/build\/content\/galerie.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/content\/galerie.html",
+		"oAP": "\/build\/content\/galerie.html",
 		"oF": 0
 		},
-	"\/content\/impressum.html": {
+	"\/build\/content\/impressum.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/content\/impressum.html",
+		"oAP": "\/build\/content\/impressum.html",
 		"oF": 0
 		},
-	"\/content\/kontakt.html": {
+	"\/build\/content\/kontakt.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/content\/kontakt.html",
+		"oAP": "\/build\/content\/kontakt.html",
 		"oF": 0
 		},
-	"\/content\/vita.html": {
+	"\/build\/content\/vita.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/content\/vita.html",
+		"oAP": "\/build\/content\/vita.html",
 		"oF": 0
 		},
 	"\/index.html": {
