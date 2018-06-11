@@ -9,13 +9,6 @@
 	],
 "creatorBuild": "26667",
 "files": {
-	"\/.htaccess ": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/.htaccess ",
-		"oF": 0
-		},
 	"\/404.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1100,324 +1093,6 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/galerie\/thumb\/thumb-42.jpg": {
-		"ft": 16384,
-		"iS": 4097,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-42.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-43.jpg": {
-		"ft": 16384,
-		"iS": 2808,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-43.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-44.jpg": {
-		"ft": 16384,
-		"iS": 2533,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-44.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-45.jpg": {
-		"ft": 16384,
-		"iS": 3374,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-45.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-46.jpg": {
-		"ft": 16384,
-		"iS": 3210,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-46.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-47.jpg": {
-		"ft": 16384,
-		"iS": 3032,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-47.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-48.jpg": {
-		"ft": 16384,
-		"iS": 2941,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-48.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-49.jpg": {
-		"ft": 16384,
-		"iS": 3217,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-49.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-50.jpg": {
-		"ft": 16384,
-		"iS": 2837,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-50.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-51.jpg": {
-		"ft": 16384,
-		"iS": 3556,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-51.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/galerie\/thumb\/thumb-52.jpg": {
-		"ft": 16384,
-		"iS": 14140,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/galerie\/thumb\/thumb-52.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/ico_chat.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/ico_chat.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/ico_phone.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/ico_phone.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/ico_pin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/ico_pin.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/image-face.jpg": {
-		"ft": 16384,
-		"iS": 3748,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/assets\/img\/image-face.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/assets\/img\/Logo-site.png": {
-		"ft": 32768,
-		"iS": 2311,
-		"oA": 0,
-		"oAP": "\/assets\/img\/Logo-site.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/assets\/img\/logo-site.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/logo-site.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/logo-small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/logo-small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/img\/logo_small.png": {
-		"ft": 32768,
-		"iS": 4719,
-		"oA": 0,
-		"oAP": "\/assets\/img\/logo_small.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/assets\/img\/topRect.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/topRect.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/js\/--lightbox-plus-jquery-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/--lightbox-plus-jquery-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/--lightbox-plus-jquery.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/--lightbox-plus-jquery-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/functions-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/functions-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/functions.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/functions-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/jquery-2.1.4.min-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/jquery-2.1.4.min-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/jquery-2.1.4.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/jquery-2.1.4.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/lightbox-plus-jquery-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/lightbox-plus-jquery-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/lightbox-plus-jquery.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/lightbox-plus-jquery-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/biografie.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/biografie.html",
-		"oF": 0
-		},
-	"\/build\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/.gitignore",
-		"oF": 0
-		},
 	"\/content\/ausstellung.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1467,42 +1142,23 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/main-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/main-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/main-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/README.html": {
+	"\/README.md": {
 		"cB": 0,
-		"ft": 8192,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
 		"oA": 0,
 		"oAP": "\/README.html",
-		"oF": 0
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/robots.txt": {
 		"cB": 0,
@@ -1532,7 +1188,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 548846051,
-	"displayValue": "WBT10",
+	"displayValue": "Projekt HermiLanza",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_brown",
 	"iconImageWasSetByUser": 1
