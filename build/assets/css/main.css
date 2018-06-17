@@ -485,7 +485,7 @@ input[type="button"]:focus {
 }
 
 .page-home section:first-child {
-  background-image: url(../assets/img/starter-kit-cover.jpg);
+  background-image: url(../img/starter-kit-cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
