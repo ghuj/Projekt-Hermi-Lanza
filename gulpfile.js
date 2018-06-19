@@ -149,6 +149,7 @@ gulp.task('pug', function () {
 gulp.task('sass', function () {
   log('-> Compile SASS Styles')
   return gulp.src(styles.in)
+    .pipe(sourcemaps.init)
     .pipe($.plumber())
     .pipe($.sass(styles.sassOpt))
     .pipe($.size({ title: 'styles In Size' }))
@@ -216,4 +217,3 @@ gulp.task('default', ['help']);
  function log(msg) {
    console.log(msg);
 }
-

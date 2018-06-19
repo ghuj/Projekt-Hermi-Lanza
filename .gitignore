@@ -1,0 +1,41 @@
+
+# Erstellt von https://www.gitignore.io/api/macos
+
+### Mac OS ###
+* .DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon muss mit zwei \ r enden
+Symbol
+
+# Vorschaubilder
+._ *
+
+# Dateien, die im Stammverzeichnis eines Volumes erscheinen könnten
+.source
+.DocumentRevisionen-V100
+.fseventsd
+.Spotlight-V100
+.TemporäreItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Verzeichnisse, die möglicherweise auf einer Remote-AFP-Freigabe erstellt wurden
+.AppleDB
+.AppleDesktop
+Netzwerk-Papierkorbordner
+Temporäre Gegenstände
+.apdisk
+
+### Git ###
+* .orig
+node_modules/
+
+
+### Sass ###
+.sass-cache
+
+
+# Ende von https://www.gitignore.io/api/macos

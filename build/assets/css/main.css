@@ -345,7 +345,8 @@ hr {
   border: solid #ddd;
   border-width: 1px 0 0;
   clear: both;
-  margin: 10px 0 30px;
+  margin-left: 45%;
+  margin-right: 45%;
   height: 0;
 }
 
@@ -485,9 +486,9 @@ input[type="button"]:focus {
 }
 
 .page-home section:first-child {
-  background-image: url(../img/starter-kit-cover.jpg);
-  background-size: cover;
+  background-image: url(../img/box_mitte.png);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -518,6 +519,14 @@ a {
 .container {
   width: 90%;
   margin: auto;
+}
+
+.container section {
+  box-shadow: 0px 0px 0px transparent;
+}
+
+.container .page-home section {
+  margin: 0%;
 }
 
 .main-header, .nav {
@@ -552,6 +561,18 @@ a {
   color: #0b0b0b;
   text-decoration: none;
   border-bottom-color: #39CCCC;
+}
+
+article {
+  width: 100%;
+  height: 429px;
+  margin: 0 10px 0 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+article:last-child {
+  margin-bottom: 0px;
 }
 
 #header {
@@ -690,7 +711,7 @@ nav label:before {
 }
 
 .side-header {
-  background-image: url(..assets/img/logo-site.svg);
+  background-image: url(../img/logo-site.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 106px;
@@ -704,7 +725,7 @@ nav label:before {
 
 .face-img {
   position: relative;
-  background-image: url(../assets/img/image-face.jpg);
+  background-image: url(../img/image-face.jpg);
   background-repeat: no-repeat;
   height: 120px;
   width: 120px;
@@ -794,36 +815,6 @@ a:active, a:focus {
   text-align: left;
 }
 
-@media (max-width: 769px){
-  .top-rect{
-    display: none;
-  }
-  section{
-    box-shadow: 0px 0px 0px transparent;
-  }
-  .page-home section{
-    margin: 0%;
-  }
-  article{
-    text-align: center;
-  }
-  .side-right{
-    width: 100%;
-    margin: 0 4% 0 4%;
-  }
-  .side-left{
-    display: none;
-    padding: 0 5px 0 5px;
-  }
-  footer{
-    margin: 0px 80px 0 80px;
-  }
-  .gallery{
-    height: 100%;
-    margin-bottom: 20px;
-  }
-}
-
 @media (min-width: 1200px){
   .container{
     width: 1080px;
@@ -849,21 +840,32 @@ a:active, a:focus {
   .nav a{
     border-bottom-color: transparent;
   }
-  article{
-    width: 100%;
-    height: 429px;
-    margin: 0 10px 0 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-  }
-  article:last-child{
-    margin-bottom: 0px;
-  }
 }
 
 @media (min-width: 769px) and (max-width: 500px){
   .nav a{
     font-size: 20px;
+  }
+}
+
+@media (max-width: 769px){
+  article{
+    text-align: center;
+  }
+  .side-right{
+    width: 100%;
+    margin: 0 4% 0 4%;
+  }
+  .side-left{
+    display: none;
+    padding: 0 5px 0 5px;
+  }
+  footer{
+    margin: 0px 80px 0 80px;
+  }
+  .gallery{
+    height: 100%;
+    margin-bottom: 20px;
   }
 }
 
