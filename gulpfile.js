@@ -149,14 +149,14 @@ gulp.task('pug', function () {
 gulp.task('sass', function () {
   log('-> Compile SASS Styles')
   return gulp.src(styles.in)
-    .pipe(sourcemaps.init)
     .pipe($.plumber())
     .pipe($.sass(styles.sassOpt))
     .pipe($.size({ title: 'styles In Size' }))
     .pipe($.pleeease(styles.pleeeaseOpt))
     .pipe($.size({ title: 'styles Out Size' }))
     .pipe(gulp.dest(styles.out))
-    .pipe(browsersync.reload({ stream: true }));
+    .pipe(browsersync.reload({ stream: true }))
+
 });
 
 // Start BrowserSync
