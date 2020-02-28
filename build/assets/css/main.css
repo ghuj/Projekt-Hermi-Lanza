@@ -464,9 +464,23 @@ input[type="button"]:focus {
 }
 
 /************  R E S E T ******************************/
+section {
+  max-width: 960px;
+  width: 80vw;
+  position: relative;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  padding: 30px;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 .page-home {
-  height: 400px;
-  margin: 50px auto;
+  width: 960px;
+  height: 495px;
+  margin-bottom: 30px;
   display: -ms-grid;
   display: grid;
   background-color: tomato;
@@ -474,15 +488,6 @@ input[type="button"]:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-section {
-  position: relative;
-  max-width: 1013px;
-  width: 100vw;
-  height: auto;
-  margin: 0 auto;
-  margin-bottom: 30px;
 }
 
 li {
@@ -660,7 +665,7 @@ nav label:before {
 }
 
 .mainPage {
-  max-width: 941px;
+  width: 100%;
   height: auto;
   display: -ms-flexbox;
   display: flex;
