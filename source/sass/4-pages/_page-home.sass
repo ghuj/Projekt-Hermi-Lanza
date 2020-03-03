@@ -1,27 +1,26 @@
 /************  R E S E T ******************************/
 
-section   
-  max-width: 960px
-  width: 80vw
+section     
   position: relative 
   height: auto
-  display: flex
-  margin: 0px auto
-  padding: 30px
-  justify-content: center   
+  display: flex    
+  justify-content: center     
+  //3background-color: lightgreen
   
-.page-home  
-  width: 960px
+.page-home 
+  width: 990px
   height: 495px
+  padding: 50px  
   margin-bottom: 30px 
-  display: grid  
-  background-color: tomato
+  box-sizing: border-box
   background:
     image: url(../img/box_mitte.png)
     repeat: no-repeat
     size: cover
     position: center
-  
+h1 
+  font-size: 5em
+  box-sizing: border-box
 li
   padding: 0
   list-style-type: none
@@ -129,120 +128,12 @@ article
     margin: 30px auto
     position: relative
 
-/***************** NAVIGATION ******************
-
-.main
-  float: right
-
-nav
-  ul
-    text-align: right
-    display: flex
-    flex-wrap: wrap
-    margin: 0px auto
-    flex: 1
-  li:last-child
-    border-bottom: none
-  a
-    text-decoration: none
-    color: #111
-    display: block
-    font-size: 1.3rem
-    &:hover
-      color: #FF4136
-  li
-    position: relative
-    line-height: 50px
-    color: #fff
-    text-align: center
-    list-style: none
-  input
-    display: none
-    width: 26px
-    height: 36px
-    background: #484b4b
-    color: #fff
-    text-align: center
-    line-height: 36px
-    font-size: 1.6rem
-    border-radius: 4px
-  label
-    display: none
-    width: 36px
-    height: 36px
-    background: #484b4b
-    color: #fff
-    text-align: center
-    line-height: 36px
-    font-size: 1.6rem
-    border-radius: 4px
-    position: absolute
-    top: 8px
-    right: 8px
-    transition: 0.4s
-    &:hover
-      cursor: pointer
-    &:before
-      font-family: FontAwesome
-      font-size: 24px
-      content: ""
-      text-align: center
-
-/*************** MEDIA QUERIES *****************
-@media only screen and (max-width: 930px)
-  .main
-    display: block
-    background: #484b4b
-    width: 100%
-    height: 100%
-    overflow: auto
-    position: fixed
-    margin: 2% auto
-    padding: 0px
-    text-align: center
-    float: none
-    top: 213px
-    font-size: 100%
-    font: inherit
-    vertical-align: baseline
-  nav
-    ul
-      position: fixed
-      transform: translateY(0)
-      transition: all 0.5s
-      z-index: 1
-    li
-      flex: none
-      width: 100%
-      border-bottom: solid 1px #777
-    input[type="checkbox"]:checked + ul
-      transform: translateY(-170%)
-      background: #fff
-      transition: all 0.5s
-      font: 100 18px Lato, helvetica, sans-serif
-      line-height: 35px
-    li:first-child
-      margin-top: 30px
-    a
-      color: #fff
-      margin: 0 -1px 0 10px
-      font-size: 1em
-    label
-      display: block
-    input[type="checkbox"]:checked + ul li:nth-child(1)
-      background: #484b4b
-      color: #fff
-
-#menu li
-  &.current a, a:focus
-    color: #FF4136
-    border-bottom: 0px solid #ffffff
-    text-decoration: none
-
 .mainPage
-  width: 100%
   height: auto
   display: flex
+  padding: 50px
+  margin-bottom: 30px
+  box-sizing: border-box
   border: 1px solid #ccc
   background-color: #fff
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)
@@ -328,51 +219,3 @@ footer
   text-align: center
   color: #333
 
-.gallery
-  width: 100%
-  height: 429px
-  margin: 71px 30px 30px
-  text-align: center
-  &:last-child
-    margin-bottom: 0px
-
-@media (max-width: 769px)
-  .gallery
-    height: 100%
-    margin-bottom: 20px
-
-.images
-  display: flex
-  flex-direction: column
-  float: left
-  height: 80px
-  margin: 12px 10px 10px 10px
-  color: #333
-  text-decoration: none
-  line-height: 3px
-
-.galerie a
-  &:link
-    text-decoration: none
-    color: #333
-  &:hover
-    text-decoration: underline
-    color: #333
-
-a
-  &:active, &:focus
-    text-decoration: underline
-    color: #333
-
-.data-image
-  float: left
-  margin-right: 10px
-
-.galerie, p
-  margin-top: 19px
-
-.content
-  margin: 0% 10%
-  text-align: left
-
-/*# sourceMappingURL=main.css.map
