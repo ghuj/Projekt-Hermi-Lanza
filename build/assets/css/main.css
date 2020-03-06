@@ -482,57 +482,59 @@ nav label:before {
   text-decoration: none;
 }
 
-.gallery {
-  width: 100%;
-  height: 429px;
-  background-color: blue;
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  margin: 85px;
 }
 
-.gallery:last-child {
-  margin-bottom: 0px;
+.wrapper .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
 }
 
-.images {
+.wrapper .item {
+  background: green;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  float: left;
-  height: 80px;
-  margin: 12px 10px 10px 10px;
-  color: #333;
-  text-decoration: none;
-  line-height: 3px;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 2px solid red;
 }
 
-.galerie a:link {
-  text-decoration: none;
-  color: #333;
+.wrapper .wrap-row {
+  display: -ms-grid;
+  display: grid;
+  height: 300px;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
 }
 
-.galerie a:hover {
-  text-decoration: underline;
-  color: #333;
+.wrapper .wrap-row2 {
+  display: -ms-grid;
+  display: grid;
+  height: 300px;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
 }
 
-a:active, a:focus {
-  text-decoration: underline;
-  color: #333;
+.wrapper .items2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
-.data-image {
-  float: left;
-  margin-right: 10px;
-}
-
-.galerie, p {
-  margin-top: 19px;
-}
-
-.content {
-  margin: 0% 10%;
-  text-align: left;
-}
 /************  R E S E T ******************************/
 section {
   position: relative;
@@ -730,6 +732,14 @@ footer li a:hover {
   color: #333;
 }
 
+/************  MEDIA QUERIES ******************************/
+
+@media (min-width: 769px) and (max-width: 500px){
+  .nav a{
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 930px){
   .main{
     display: block;
@@ -783,12 +793,6 @@ footer li a:hover {
   }
 }
 
-@media (min-width: 1200px){
-  .container{
-    width: 1080px;
-  }
-}
-
 @media (min-width: 769px){
   .main-header{
     height: 200px;
@@ -810,9 +814,9 @@ footer li a:hover {
   }
 }
 
-@media (min-width: 769px) and (max-width: 500px){
-  .nav a{
-    font-size: 20px;
+@media (min-width: 1200px){
+  .container{
+    width: 1080px;
   }
 }
 

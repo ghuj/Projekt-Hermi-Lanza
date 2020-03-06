@@ -1,46 +1,35 @@
 
+.wrapper
+  display: grid
+  grid-gap: 25px
+  margin: 85px
 
-.gallery
-  width: 100%
-  height: 429px
-  //margin: 71px 30px 30px
-  //text-align: center
-  background-color: blue
-  &:last-child
-    margin-bottom: 0px
+  .items
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-gap: 25px
 
-.images
-  display: flex
-  flex-direction: column
-  float: left
-  height: 80px
-  margin: 12px 10px 10px 10px
-  color: #333
-  text-decoration: none
-  line-height: 3px
+  .item
+    background: green
+    color: white
+    margin: 10px
+    font-size: 20px
+    display: flex
+    height: 100%
+    justify-content: center
+    align-items: center
+    border: 2px solid red
 
-.galerie a
-  &:link
-    text-decoration: none
-    color: #333
-  &:hover
-    text-decoration: underline
-    color: #333
+  .wrap-row
+    display: grid
+    height: 300px
+    grid-template-columns: 1fr 1fr 2fr
 
-a
-  &:active, &:focus
-    text-decoration: underline
-    color: #333
+  .wrap-row2
+    display: grid
+    height: 300px
+    grid-template-columns: 1fr 3fr
 
-.data-image
-  float: left
-  margin-right: 10px
-
-.galerie, p
-  margin-top: 19px
-
-.content
-  margin: 0% 10%
-  text-align: left
-
-/*# sourceMappingURL=main.css.map
+  .items2
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr

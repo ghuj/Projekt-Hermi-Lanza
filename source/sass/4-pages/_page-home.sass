@@ -39,10 +39,6 @@ a
   .page-home section
     margin: 0%
 
-@media (min-width: 1200px)
-  .container
-    width: 1080px
-
 .main-header, .nav
   display: flex
   flex-direction: column
@@ -68,24 +64,6 @@ a
       text-decoration: none
       border-bottom-color: #39CCCC
 
-@media (min-width: 769px)
-  .main-header
-    height: 200px
-    justify-content: flex-end
-  .site-logo
-    width: 140px
-  .nav
-    margin-top: 3em
-    flex-direction: row
-    justify-content: space-around
-    a
-      border-bottom-color: transparent
-
-@media (min-width: 769px) and (max-width: 500px)
-  .nav a
-    font-size: 20px
-
-
 article
   width: 100%
   height: 429px
@@ -95,21 +73,11 @@ article
   &:last-child
     margin-bottom: 0px
 
-@media (max-width: 769px)
-  article
-    text-align: center
-
 #header
   width: 915px
   height: 75px
   overflow: hidden
   padding-left: 29px
-
-@media (max-width: 960px)
-  #header
-    width: 100%
-    height: 162px
-    padding: 0px
 
 .logo
   background-image: url(../img/logo.svg)
@@ -117,16 +85,6 @@ article
   background-repeat: no-repeat
   height: 33px
   overflow: hidden
-
-@media (max-width: 930px)
-  .logo
-    background-image: url(../img/logo-small.svg)
-    background-size: contain
-    display: block
-    height: 200px
-    width: 200px
-    margin: 30px auto
-    position: relative
 
 .mainPage
   height: auto
@@ -137,16 +95,6 @@ article
   border: 1px solid #ccc
   background-color: #fff
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)
-
-@media (max-width: 930px)
-  .mainPage
-    width: auto
-    float: none
-    width: 100%
-    margin: 0 8px 0 8px
-    margin: 0px
-    border: 0px
-    box-shadow: none
 
 .side-right
   width: 629px
@@ -159,19 +107,9 @@ article
   ol
     padding: 0px
 
-@media (max-width: 769px)
-  .side-right
-    width: 100%
-    margin: 0 4% 0 4%
-
 .side-left
   width: 170px
   height: 470px
-
-@media (max-width: 769px)
-  .side-left
-    display: none
-    padding: 0 5px 0 5px
 
 .side-header
   background-image: url(../img/logo-site.svg)
@@ -209,13 +147,73 @@ footer
         color: #333
         border-bottom: 0px solid #ffffff
         text-decoration: underline
-
-@media (max-width: 769px)
-  footer
-    margin: 0px 80px 0 80px
-
 .lockup
   padding: 10px 0 0 0
   text-align: center
   color: #333
 
+/************  MEDIA QUERIES ******************************/
+
+
+@media (min-width: 769px)
+  .main-header
+    height: 200px
+    justify-content: flex-end
+  .site-logo
+    width: 140px
+  .nav
+    margin-top: 3em
+    flex-direction: row
+    justify-content: space-around
+    a
+      border-bottom-color: transparent  
+
+@media (min-width: 1200px)
+  .container
+    width: 1080px
+
+@media (max-width: 769px)
+  article
+    text-align: center
+
+
+@media (max-width: 960px)
+  #header
+    width: 100%
+    height: 162px
+    padding: 0px
+
+
+@media (max-width: 930px)
+  .logo
+    background-image: url(../img/logo-small.svg)
+    background-size: contain
+    display: block
+    height: 200px
+    width: 200px
+    margin: 30px auto
+    position: relative  
+
+@media (max-width: 930px)
+  .mainPage
+    width: auto
+    float: none
+    width: 100%
+    margin: 0 8px 0 8px
+    margin: 0px
+    border: 0px
+    box-shadow: none
+
+@media (max-width: 769px)
+  .side-right
+    width: 100%
+    margin: 0 4% 0 4%
+
+@media (max-width: 769px)
+  .side-left
+    display: none
+    padding: 0 5px 0 5px
+
+@media (max-width: 769px)
+  footer
+    margin: 0px 80px 0 80px  
