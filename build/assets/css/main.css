@@ -482,11 +482,23 @@ nav label:before {
   text-decoration: none;
 }
 
+.gallery {
+  width: 100%;
+  height: auto;
+  background-color: #F4F4F4;
+}
+
+.gallery:last-child {
+  margin-bottom: 0px;
+}
+
 .wrapper {
   display: -ms-grid;
   display: grid;
   grid-gap: 25px;
-  margin: 85px;
+  margin: 65px;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .wrapper .items {
@@ -652,7 +664,7 @@ article:last-child {
   display: -ms-flexbox;
   display: flex;
   padding: 50px;
-  margin-bottom: 30px;
+  margin: 30px 30px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   background-color: #fff;
