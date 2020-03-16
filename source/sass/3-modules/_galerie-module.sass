@@ -1,43 +1,38 @@
+*
+  box-sizing: border-box
 
 .gallery
   width: 100%
   height: auto
   background-color: #F4F4F4
+  display: flex
+  flex-wrap: wrap
+  padding: 65px
   &:last-child
     margin-bottom: 0px
+.row
+  display: flex
+  flex-wrap: wrap
+  padding: 0 4px
 
-.wrapper
-  display: grid
-  grid-gap: 25px
-  margin: 65px
-  flex-direction: column
+.column
+  flex: 25%
+  max-width: 25%
+  padding: 0 4px
 
-  .items
-    display: grid
-    grid-template-rows: 1fr 1fr
-    grid-gap: 25px
+  img
+    margin-top: 8px
+    vertical-align: middle
+    width: 100%
 
-  .item
-    background: green
-    color: white
-    margin: 10px
-    font-size: 20px
-    display: flex
-    height: 100%
-    justify-content: center
-    align-items: center
-    border: 2px solid red
+@media screen and (max-width: 800px)
+  .column
+    -ms-flex: 50%
+    flex: 50%
+    max-width: 50%
 
-  .wrap-row
-    display: grid
-    height: 300px
-    grid-template-columns: 1fr 1fr 2fr
-
-  .wrap-row2
-    display: grid
-    height: 300px
-    grid-template-columns: 1fr 3fr
-
-  .items2
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
+@media screen and (max-width: 600px)
+  .column
+    -ms-flex: 100%
+    flex: 100%
+    max-width: 100%
