@@ -522,6 +522,140 @@ nav label:before {
   width: 100%;
 }
 
+.contact {
+  width: 100%;
+  padding: 9% 20%;
+  background-color: #444444;
+}
+
+.contact h3 {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+#fs-frm input, #fs-frm select, #fs-frm textarea, #fs-frm fieldset, #fs-frm optgroup, #fs-frm label, #fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#fs-frm label, #fs-frm legend, #fs-frm :-ms-input-placeholder {
+  color: #fff;
+  font-size: .825em;
+  margin-bottom: .5em;
+  padding-top: .2em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+
+#fs-frm label, #fs-frm legend, #fs-frm ::placeholder {
+  color: #fff;
+  font-size: .825em;
+  margin-bottom: .5em;
+  padding-top: .2em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+
+#fs-frm input, #fs-frm select, #fs-frm textarea, #fs-frm #card-element {
+  border: 1px solid #fff;
+  background-color: #626262;
+  color: #fff;
+  padding: .75em 1em;
+  margin-bottom: 1.5em;
+}
+
+#fs-frm input:focus, #fs-frm select:focus, #fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+
+#fs-frm [type="text"], #fs-frm [type="email"] {
+  width: 100%;
+}
+
+#fs-frm [type="button"], #fs-frm [type="submit"], #fs-frm [type="reset"] {
+  width: 80px;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  padding: 0px;
+}
+
+#fs-frm [type="button"]:focus, #fs-frm [type="submit"]:focus, #fs-frm [type="reset"]:focus {
+  outline: none;
+}
+
+#fs-frm [type="submit"], #fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+#fs-frm fieldset.locale input[name="city"], #fs-frm fieldset.locale select[name="state"] {
+  display: inline;
+}
+
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+
+#fs-frm fieldset.locale select[name="state"] {
+  width: 20%;
+}
+
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+
+#fs-frm fieldset.locale input[name="city"] {
+  margin-right: 3%;
+}
+
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
+
+/* border, padding, margin, width */
+/* address, locale */
 /************  R E S E T ******************************/
 section {
   position: relative;
@@ -609,12 +743,16 @@ a {
 
 article {
   width: 992px;
-  height: 495px;
-  padding: 0px 40px;
+  height: 572px;
+  padding: 0px 95px;
   margin: 30px 30px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+  text-align: center;
 }
 
 article:last-child {
@@ -666,21 +804,24 @@ article:last-child {
 }
 
 .side-left {
-  width: 170px;
   height: 470px;
 }
 
 .side-header {
-  background-image: url(../img/logo-site.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 106px;
-  width: 150px;
   color: #333;
-  padding: 30px 0px 20px 8px;
-  margin: 0 50px 0 50px;
+  padding: 12px 0px 20px 8px;
+  margin: 0 50px 0 17px;
   top: -120px;
   font-size: 1.1em;
+}
+
+.side-header h3 {
+  margin-left: 22px;
+  font-size: 2.3em;
+  border-bottom: 1px solid red;
 }
 
 .face-img {
@@ -689,7 +830,7 @@ article:last-child {
   background-repeat: no-repeat;
   height: 120px;
   width: 120px;
-  top: 18px;
+  top: 85px;
   left: 44px;
 }
 

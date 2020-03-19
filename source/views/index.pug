@@ -35,9 +35,10 @@ html(lang='en')
       .mainPage
         .side-left
           .side-header
+            h3 Biografie
           .face-img
         .side-right
-          h3 Biografie
+          //h3 Biografie
           p
             | Ab 1991 intensive Auseinandersetzung mit der Malerei. Seit Jahren regelmäßiger Besuch von
             | Seminaren bei namhaften Künstlern in der Kunstakademie Bad Reichenhall. Ebenso ein für
@@ -53,10 +54,11 @@ html(lang='en')
     section
       .mainPage
         .side-left
-          .side-header
-          .face-img
+          .side-header  
+            h3 Ausstellungen         
+          .face-img            
         .side-right
-          h3 Ausstellungen
+          //h3 Ausstellungen
           ol
             li Graz- St. Veit
             li Kulturverein Murvorstadt Graz
@@ -102,30 +104,19 @@ html(lang='en')
               img(src='../assets/img/galerie/double-1.jpg' style='width:100%')       
               
     section       
-      .mainPage
-        .side-left
-          .side-header
-          .face-img
-        .side-right
-            h3(style='text-align:center') Kontakt
-                h5
-                  img(src='assets/img/ico_pin.svg', alt='ico_pin', width='17', height='17')
-                  | Adresse
-                li Ettendorf 30
-                li 8510 Stainz
-                hr              
-                h5
-                  img(src='assets/img/ico_phone.svg', alt='ico_phone', width='17', height='17')
-                  |  Telefon
-                li 0664-73511141
-                li
-                  hr            
-                  h5
-                    img(src='assets/img/ico_chat.svg', alt='ico_chat', width='17', height='17')
-                    |  E-Mail
-                li E-Mail: h.lanza@gmx.at
-                li
-                  hr                  
+      .contact   
+        h3 Das ist ein Test     
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mrglkqby" method="post">
+          <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">            
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form> 
+      
     section  
       article
           h3 Impressum          

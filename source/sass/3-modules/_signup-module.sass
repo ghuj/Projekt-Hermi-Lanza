@@ -1,0 +1,107 @@
+
+.contact 
+  width: 100%
+  padding: 9% 20%
+  background-color: #444444
+  h3
+    width: 100%
+    color: $white
+    text-align: center
+
+#fs-frm
+  input, select, textarea, fieldset, optgroup, label, #card-element:disabled
+    font-family: inherit
+    font-size: 100%
+    color: inherit
+    border: none
+    border-radius: 0
+    display: block
+    width: 100%
+    padding: 0
+    margin: 0
+    -webkit-appearance: none
+    -moz-appearance: none
+
+  label, legend, ::placeholder
+    color: $white
+    font-size: .825em
+    margin-bottom: .5em
+    padding-top: .2em
+    display: flex
+    align-items: baseline
+
+  input, select, textarea, #card-element
+    border: 1px solid $white
+    background-color: rgba(98, 98, 98, 1)
+    color: $white
+    padding: .75em 1em
+    margin-bottom: 1.5em
+
+  input:focus, select:focus, textarea:focus
+    background-color: white
+    outline-style: solid
+    outline-width: thin
+    outline-color: gray
+    outline-offset: -1px
+
+  [type="text"], [type="email"]
+    width: 100%
+
+  [type="button"], [type="submit"], [type="reset"]
+    width: 80px
+    cursor: pointer
+    -webkit-appearance: button
+    -moz-appearance: button
+    appearance: button
+    padding: 0px 
+    //background-color: tomato
+
+  [type="button"]:focus, [type="submit"]:focus, [type="reset"]:focus
+    outline: none
+
+  [type="submit"], [type="reset"]
+    margin-bottom: 0
+
+  select
+    text-transform: none
+
+  [type="checkbox"]
+    -webkit-appearance: checkbox
+    -moz-appearance: checkbox
+    appearance: checkbox
+    display: inline-block
+    width: auto
+    margin: 0 .5em 0 0 !important
+
+  [type="radio"]
+    -webkit-appearance: radio
+    -moz-appearance: radio
+    appearance: radio
+
+  fieldset.locale
+    input[name="city"], select[name="state"]
+      display: inline
+
+    input
+      &[name="postal-code"]
+        display: inline
+
+      &[name="city"]
+        width: 52%
+
+    select[name="state"]
+      width: 20%
+
+    input
+      &[name="postal-code"]
+        width: 20%
+
+      &[name="city"]
+        margin-right: 3%
+
+    select[name="state"]
+      margin-right: 3%
+
+/* border, padding, margin, width
+
+/* address, locale
