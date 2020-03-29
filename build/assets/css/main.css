@@ -482,23 +482,29 @@ nav label:before {
   text-decoration: none;
 }
 
+/************  G A L L E R Y ******************************/
 * {
   box-sizing: border-box;
 }
 
 .gallery {
   width: 100%;
+  position: relative;
   height: auto;
-  background-color: #F4F4F4;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-direction: grid;
+      flex-direction: grid;
+  background-color: tomato;
 }
 
 .gallery:last-child {
   margin-bottom: 0px;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
 }
 
 .row {
@@ -509,6 +515,7 @@ nav label:before {
   padding: 0 4px;
 }
 
+/* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 25%;
       flex: 25%;
@@ -519,8 +526,11 @@ nav label:before {
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-  width: 100%;
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 .contact {
   width: 100%;
@@ -660,8 +670,8 @@ nav label:before {
 section {
   position: relative;
   height: auto;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -ms-flex-pack: center;
       justify-content: center;
 }
@@ -669,8 +679,6 @@ section {
 .page-home {
   width: 990px;
   height: 495px;
-  padding: 50px;
-  margin: 30px 30px;
   box-sizing: border-box;
   background-image: url(../img/box_mitte.png);
   background-repeat: no-repeat;
@@ -924,18 +932,18 @@ footer li a:hover {
   }
 }
 
-@media screen and (max-width: 800px){
+@media (max-width: 800px){
   .column{
     -ms-flex: 50%;
-    flex: 50%;
+        flex: 50%;
     max-width: 50%;
   }
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
   .column{
     -ms-flex: 100%;
-    flex: 100%;
+        flex: 100%;
     max-width: 100%;
   }
 }
