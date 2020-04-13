@@ -31,13 +31,12 @@ html(lang='en')
             li
               a(href='content/impressum.html') Impressum
           // index
-    section
-      .mainPage
-        .side-left
-          .side-header
-            h3 Biografie
-          .face-img
-        .side-right
+    section.mainPage
+      .side-header
+        h3 Biografie
+        .side-left          
+        .face-img
+      .side-right
           //h3 Biografie
           p
             | Ab 1991 intensive Auseinandersetzung mit der Malerei. Seit Jahren regelmäßiger Besuch von
@@ -51,11 +50,10 @@ html(lang='en')
             h5 Arbeitstechniken:
               p vorwiegend Acryl, Öl, Leimfarbe, Collage, etc,
               // end textbereich             
-    section
-      .mainPage
-        .side-left
-          .side-header  
-            h3 Ausstellungen         
+    section.mainPage
+        .side-header  
+          h3 Ausstellungen 
+          .side-left        
           .face-img            
         .side-right
           //h3 Ausstellungen
@@ -167,7 +165,7 @@ html(lang='en')
         li
           br
           .lockup   © Hermi Lanza Alle Rechte vorbehalten.
-      .footer-rect
+      
     // end. wrapper
   script(src='assets/js/jquery-2.1.4.min.js')
   script(src='assets/js/functions.js', type='text/javascript')

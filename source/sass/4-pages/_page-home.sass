@@ -1,12 +1,29 @@
-/************  R E S E T ******************************/
+/************  H E A D E R ******************************/
 
+#header
+  width: 915px
+  height: 75px
+  overflow: hidden
+  padding-left: 29px
+
+.logo
+  background-image: url(../img/logo.svg)
+  background-size: cover
+  background-repeat: no-repeat
+  height: 33px
+  overflow: hidden  
+
+//************ B O D Y- E L E M E N T ******************************/ 
+  
 section    
   max-width: 995vw
   width: 100%
   position: relative 
   height: auto
   display: flex
-  justify-content: center
+  justify-content: center    
+  .page-home section
+    margin: 0%
        
 .page-home 
   width: 990px
@@ -29,39 +46,16 @@ a
   text-decoration: none
   font-weight: 400
 
-.container
-  width: 90%
-  margin: auto
-
-  section
-    box-shadow: 0px 0px 0px transparent
-  .page-home section
-    margin: 0%
-
-.main-header, .nav
-  display: flex
-  flex-direction: column
-
-.main-header
-  padding-top: 2em
-
-.nav
+.mainPage
+  width: 992px
+  height: auto
+  display: flex    
+  padding: 50px
+  margin: 30px 124px
+  box-sizing: border-box
+  border: 1px solid #ccc
   background-color: #fff
-  margin: 1.5em 0 4.5em 0
-  padding: 1.5em
-  a
-    display: block
-    color: #333
-    font-size: 1.125em
-    font-weight: 300
-    text-align: center
-    padding: 0.4em
-    border-bottom: 1px solid #ddd
-    text-decoration: none
-    &:hover
-      color: #0b0b0b
-      text-decoration: none
-      border-bottom-color: #39CCCC
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)
 
 article
   width: 992px
@@ -69,87 +63,63 @@ article
   padding:  0px 95px
   margin: 30px 30px
   box-sizing: border-box  
-  border: 1px solid #ccc
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)  
   h3
     text-align: center
   &:last-child
     margin-bottom: 0px
 
-#header
-  width: 915px
-  height: 75px
-  overflow: hidden
-  padding-left: 29px
-
-.logo
-  background-image: url(../img/logo.svg)
-  background-size: cover
-  background-repeat: no-repeat
-  height: 33px
-  overflow: hidden
-
-.mainPage
-  width: 992px
-  height: auto
-  display: flex
-  padding: 50px
-  margin: 30px 30px
-  box-sizing: border-box
-  border: 1px solid #ccc
-  background-color: #fff
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)
-
-.side-right
-  width: 50%
+.side-right  
+  //width: 50%
   line-height: 22px
-  padding-top: 0px
-  margin: auto
-  text-align: left  
+  padding-top: 20px
+  margin: auto    
   p span
     font-style: italic
   ol
     padding: 0px
 
 .side-left
-  //width: 170px
-  height: 470px
+  width: 50%  
+  //height: 470px
 
-.side-header
-  //background-image: url(../img/logo-site.svg)
-  background-repeat: no-repeat
-  background-size: contain
-  height: 106px
-  //width: 180px
+.side-header    
+  height: 106px    
   color: #333
   padding: 12px 0px 20px 8px
   margin: 0 50px 0 17px
   top: -120px
-  font-size: 1.1em
+  font-size: 1.1em  
+  p
   h3
-    margin-left: 22px
+    //margin-left: 22px
+    margin: 0px
     font:
         size: 2.3em
     border-bottom: 1px solid red
 
 .face-img
-  position: relative
-  background-image: url(../img/image-face.jpg)
-  background-repeat: no-repeat
   height: 120px
   width: 120px
-  top: 85px
-  left: 44px
+  position: relative
+  background-image: url(../img/image-face.jpg)
+  background-repeat: no-repeat  
+  //top: 85px
+  //left: 44px
+
+/************ F O O T E R - E L E M E N T ******************************/ 
 
 footer
-  text-align: center
-  padding-top: 4px
-  height: auto
-  clear: left
+  height: 80px
+  text-align: center  
+  padding-top: 15px   
+  background-color: #444444
+  color: #fff
+  ul
+    margin: 0px
   li
     display: inline
     a
-      color: #333
+      color: #fff
       padding: 0 4px 0 5px
       margin: 0 0 0 0px
       &:hover
@@ -157,11 +127,28 @@ footer
         border-bottom: 0px solid #ffffff
         text-decoration: underline
 .lockup
-  padding: 10px 0 0 0
+  //padding: 10px 0 0 0
   text-align: center
-  color: #333
+  color: #fff
 
 /************  MEDIA QUERIES ******************************/
+
+@media all and (max-width: 800px)    
+  article 
+    height: 100%
+    margin: 10px
+    padding: 0px
+
+  .face-img  
+    width: 100%
+  
+  .side-left  
+    height: 40px
+
+
+
+
+
 
 
 @media (min-width: 769px)
@@ -177,44 +164,4 @@ footer
     a
       border-bottom-color: transparent  
 
-@media (min-width: 1200px)
-  .container
-    width: 1080px
 
-@media (max-width: 769px)
-  article
-    text-align: center
-
-
-@media (max-width: 960px)
-  #header
-    width: 100%
-    height: 162px
-    padding: 0px
-
-
-@media (max-width: 930px)
-  .logo
-    background-image: url(../img/logo-small.svg)
-    background-size: contain
-    display: block
-    height: 200px
-    width: 200px
-    margin: 30px auto
-    position: relative  
-
-
-
-@media (max-width: 769px)
-  .side-right
-    width: 100%
-    margin: 0 4% 0 4%
-
-@media (max-width: 769px)
-  .side-left
-    display: none
-    padding: 0 5px 0 5px
-
-@media (max-width: 769px)
-  footer
-    margin: 0px 80px 0 80px  
