@@ -14,7 +14,7 @@ html(lang='en')
       style(type='text/css', media='screen').
         .browserupgrade { background-color: yellow; }
     section
-      .page-home 
+      .hero 
         h1 Hermi Lanza          
         header.main-header
           ul.nav
@@ -31,32 +31,26 @@ html(lang='en')
             li
               a(href='content/impressum.html') Impressum
           // index
-    section.mainPage
-      .side-header
-        h3 Biografie
-        .side-left          
-        .face-img
-      .side-right
-          //h3 Biografie
+    .content
+      .card
+        img.card-img(src='../assets/img/image-face.jpg' alt='')
+        h2.card-title Biografie
+        .card-content
           p
             | Ab 1991 intensive Auseinandersetzung mit der Malerei. Seit Jahren regelmäßiger Besuch von
             | Seminaren bei namhaften Künstlern in der Kunstakademie Bad Reichenhall. Ebenso ein für
-            | mich wichtiges Seminar bei Prof.Giselbert Hoke - Hortus Niger, Halbenrain.
-          br
-          span
+            | mich wichtiges Seminar bei Prof.Giselbert Hoke - Hortus Niger, Halbenrain. 
+          p  
             | Im Prozess des
             | Schaffens, über den ständigen Abgleich von Vorstellung und Ergebnis, lernte ich, wie man es  noch besser machen kann.
-          p  
-            h5 Arbeitstechniken:
-              p vorwiegend Acryl, Öl, Leimfarbe, Collage, etc,
-              // end textbereich             
-    section.mainPage
-        .side-header  
-          h3 Ausstellungen 
-          .side-left        
-          .face-img            
-        .side-right
-          //h3 Ausstellungen
+          h5 Arbeitstechniken:
+              p vorwiegend Acryl, Öl, Leimfarbe, Collage, etc,  
+      .card
+        img.card-img(src='../assets/img/image-face.jpg' alt='')
+        h2.card-title Ausstellungen 
+        .card-content
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat.
           ol
             li Graz- St. Veit
             li Kulturverein Murvorstadt Graz
@@ -66,8 +60,7 @@ html(lang='en')
             li TEML Eisenbahnmuseum Lieboch
             li Kunst und Wein, Schloß Harrachegg
             li Galerie im Bayrischen Vermessungsamt München
-            li regelmäßig "Tag der offenen Tür" in meinem Atelier
-          
+            li regelmäßig "Tag der offenen Tür" in meinem Atelier          
     section
       .gallery
         .row
