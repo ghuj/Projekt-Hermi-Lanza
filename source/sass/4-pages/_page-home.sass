@@ -2,7 +2,7 @@
 
 .hero 
   width: 100vw
-  height: 70vh
+  height: 45vh
   grid-area: hero
   background: 
     image: url(../img/hero-image.jpg)
@@ -11,12 +11,6 @@
   flex-direction: column
   align-items: center
   justify-content: center  
-
-#header
-  width: 915px
-  height: 75px
-  overflow: hidden
-  padding-left: 29px
 
 .logo
   background-image: url(../img/logo.svg)
@@ -29,14 +23,9 @@
   
 section    
   max-width: 995vw
-  width: 100%
-  position: relative 
+  width: 100%  
   height: auto
-  display: flex
-  justify-content: center    
-  .page-home section
-    margin: 0%
-
+  
 .content    
    height: 100%
    width: 100%
@@ -63,7 +52,7 @@ section
 
 .card-title 
   grid-area: title
-  margin: 0
+  margin-top: 1.0em
   font-weight: 300
 
 .card-content 
@@ -75,8 +64,6 @@ section
       list-style: none
       font-size: 1.0em
       
-
-
 article
   width: 992px
   height: 572px
@@ -87,42 +74,6 @@ article
     text-align: center
   &:last-child
     margin-bottom: 0px
-
-.side-right  
-  //width: 50%
-  line-height: 22px
-  padding-top: 20px
-  margin: auto    
-  p span
-    font-style: italic
-  
-.side-left
-  width: 50%  
-  //height: 470px
-
-.side-header    
-  height: 106px    
-  color: #333
-  padding: 12px 0px 20px 8px
-  margin: 0 50px 0 17px
-  top: -120px
-  font-size: 1.1em  
-  p
-  h3
-    //margin-left: 22px
-    margin: 0px
-    font:
-        size: 2.3em
-    border-bottom: 1px solid red
-
-.face-img
-  height: 120px
-  width: 120px
-  position: relative
-  background-image: url(../img/image-face.jpg)
-  background-repeat: no-repeat  
-  //top: 85px
-  //left: 44px
 
 /************ F O O T E R - E L E M E N T ******************************/ 
 
@@ -151,7 +102,17 @@ footer
 
 /************  MEDIA QUERIES ******************************/
 
-@media all and (max-width: 800px)    
+@media all and (max-width: 800px) 
+
+  .hero
+    height: auto  
+
+  .card
+    width: 100vw
+    height: 100vh
+    margin: 0em
+  
+  
   article 
     height: 100%
     margin: 10px
@@ -162,24 +123,3 @@ footer
   
   .side-left  
     height: 40px
-
-
-
-
-
-
-
-@media (min-width: 769px)
-  .main-header
-    height: 200px
-    justify-content: flex-end
-  .site-logo
-    width: 140px
-  .nav
-    margin-top: 3em
-    flex-direction: row
-    justify-content: space-around
-    a
-      border-bottom-color: transparent  
-
-
