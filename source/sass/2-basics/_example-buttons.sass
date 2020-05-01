@@ -1,29 +1,79 @@
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"]
-  display: inline-block
-  height: 38px
-  padding: 0 30px
-  color: #555
-  text-align: center
-  font-size: 11px
-  font-weight: 600
-  line-height: 38px
-  letter-spacing: .1rem
-  text-transform: uppercase
-  text-decoration: none
-  white-space: nowrap
-  background-color: transparent
-  border-radius: 4px
-  border: 1px solid #bbb
-  cursor: pointer
-  box-sizing: border-box
 
-  &:hover,
-  &:active,
-  &:focus
-    color: #333
-    border-color: #888
-    outline: 0
+
+.send-button
+  margin-top: 15px
+  height: 44px
+  width: 400px
+  overflow: hidden
+  color: #fff
+  
+.button
+  width: 400px
+  height: 34px
+  border: 0px
+  
+.btn-primary
+  background-color: #fff
+  border-block-end-color: #fff 
+  &:link    
+    background: orange
+  &:visited   
+    background: red
+  &:hover    
+    background-color: #dadada
+  &:focus:focus    
+    background-color: #fa003c
+  &:active    
+    background-color: yellow  
+
+@media screen and (max-width: 410px)
+  .send-button
+    width: 99%      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //.button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"]
+    display: inline-block
+    height: 38px
+    padding: 0 30px
+    color: #555
+    text-align: center
+    font-size: 11px
+    font-weight: 600
+    line-height: 38px
+    letter-spacing: .1rem
+    text-transform: uppercase
+    text-decoration: none
+    white-space: nowrap
+    background-color: transparent
+    border-radius: 4px
+    border: 1px solid #bbb
+    cursor: pointer
+    box-sizing: border-box
+
+    &:hover,
+    &:active,
+    &:focus
+      color: #333
+      border-color: #888
+      outline: 0
