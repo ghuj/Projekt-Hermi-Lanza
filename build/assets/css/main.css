@@ -365,6 +365,8 @@ hr {
   width: 400px;
   height: 34px;
   border: 0px;
+  display: inline-block;
+  text-align: center;
 }
 
 .btn-primary {
@@ -548,7 +550,8 @@ a {
   float: left;
   font-family: 'Lato';
   font-weight: 400;
-  margin-right: -15px;
+  margin-top: 20px;
+  margin-right: 65px;
   margin-left: -15px;
   box-sizing: border-box;
 }
@@ -745,6 +748,8 @@ section {
   max-width: 995vw;
   width: 100%;
   height: auto;
+  display: -ms-grid;
+  display: grid;
 }
 
 .content {
@@ -856,6 +861,9 @@ footer li a:hover {
 /************  MEDIA QUERIES ******************************/
 
 @media screen and (max-width: 410px){
+  .button{
+    width: auto;
+  }
   .send-button{
     width: 99%;
   }
@@ -1019,6 +1027,25 @@ footer li a:hover {
     width: 100vw;
     height: 100vh;
     margin: 0em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+    -ms-grid-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+  }
+  .card-img{
+    -ms-flex-order: 2;
+        order: 2;
+    background-color: tomato;
+  }
+  .card-title{
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .card-content{
+    -ms-flex-order: 3;
+        order: 3;
   }
   article{
     height: 100%;

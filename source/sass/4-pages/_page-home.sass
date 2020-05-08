@@ -25,7 +25,7 @@ section
   max-width: 995vw
   width: 100%  
   height: auto
-  //display: grid
+  display: grid
   //justify-content: center
   
 .content    
@@ -51,12 +51,12 @@ section
   grid-area: img
   max-width: 100%
   margin-top: 80px
-
+  
 .card-title 
   grid-area: title
   margin-top: 1.0em
   font-weight: 300
-
+  
 .card-content 
   grid-area: content
   margin-top: 2.5em
@@ -117,7 +117,25 @@ footer
     width: 100vw
     height: 100vh
     margin: 0em
+    display: grid
+    grid-template-areas: 
+    'card-title'
+    'card-image' 
+    'card-content'
+    grid-template-columns: auto 1fr
+    grid-template-rows: auto 1fr auto
   
+  .card-img  
+    order: 2   
+    background-color: tomato
+  
+  .card-title
+    order: 1
+    
+
+  .card-content   
+    order: 3 
+   
   
   article 
     height: 100%
