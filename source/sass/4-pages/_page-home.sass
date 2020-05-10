@@ -1,4 +1,4 @@
-/************  H E A D E R ******************************/
+//************  H E A D E R ******************************//
 
 .hero 
   width: 100vw
@@ -19,7 +19,7 @@
   height: 33px
   overflow: hidden  
 
-//************ B O D Y- E L E M E N T ******************************/ 
+//************ B O D Y- E L E M E N T ******************************//
   
 section    
   max-width: 995vw
@@ -38,9 +38,10 @@ section
   height: 65vh
   width: 65vw
   display: grid
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+  grid-template-areas: 'img' 'title' 'content'
   grid-template: "img title" min-content "img content" auto / 1fr 3fr
-  grid-column-gap: 1.5em
-  //box-shadow: 0 0 1em rgba(0, 0, 0, 0.5)
+  grid-column-gap: 1.5em  
   border: 1px solid #ccc
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)
   padding: 1.5em
@@ -81,7 +82,7 @@ article
   display: grid
   justify-content: center    
 
-/************ F O O T E R - E L E M E N T ******************************/ 
+//************ F O O T E R - E L E M E N T ******************************// 
 
 footer
   height: 80px
@@ -106,7 +107,7 @@ footer
   text-align: center
   color: #fff
 
-/************  MEDIA QUERIES ******************************/
+//************  MEDIA QUERIES ******************************//
 
 @media all and (max-width: 800px) 
 
@@ -117,26 +118,25 @@ footer
     width: 100vw
     height: 100vh
     margin: 0em
-    display: grid
-    grid-template-areas: 
-    'card-title'
-    'card-image' 
-    'card-content'
-    grid-template-columns: auto 1fr
-    grid-template-rows: auto 1fr auto
-  
-  .card-img  
-    order: 2   
-    background-color: tomato
+    display: grid    
+    grid-template-rows: repeat(1, auto) 1fr
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-areas: 'title' 'image' 'content'
+      
+  .card-img     
+    grid-area: image 
+    order: 2      
+    margin: 0 auto
   
   .card-title
+    grid-area: title    
+    text-align: center
     order: 1
-    
 
   .card-content   
+    grid-template: content
     order: 3 
    
-  
   article 
     height: 100%
     width: auto
@@ -148,3 +148,67 @@ footer
   
   .side-left  
     height: 40px
+
+#impressum
+  margin: 0px auto
+
+footer
+  height: 100px
+  background-color: $black
+  display: block
+  text-align: center
+
+.footer-nav
+  height: 370px
+  padding: 5%
+  display: inline-block
+  img
+    margin: 0% auto
+    text-align: center
+nav  
+  ul
+   display: inline-block    
+   overflow: hidden
+   text-align: center   
+  li
+    display: inline-block
+    padding: 20px
+    a
+      color: #fff 
+    a:hover
+      color: $white
+      text-decoration: underline
+
+@media (max-width: 960px)   
+
+  footer
+  //height: 285px
+  background-color: $black
+  display: block
+  text-align: center
+
+.footer-nav
+  height: 370px
+  padding: 5%
+  display: inline-block
+  img
+    margin: 0% auto
+    text-align: center
+nav  
+  ul
+   display: inline-block    
+   overflow: hidden
+   text-align: center   
+  li
+    display: inline-block
+    padding: 20px
+    a
+      color: #fff 
+    a:hover
+      color: $white
+      text-decoration: underline
+
+@media (max-width: 960px)        
+  
+  footer
+    margin-left: 0px
