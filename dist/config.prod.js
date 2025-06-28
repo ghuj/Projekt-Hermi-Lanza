@@ -1,1 +1,0 @@
-"use strict";module.exports=function(){return{environment:"development",source:"source/",build:"build/",images:"assets/img",views:"views/",sass:"sass/main.sass",css:"assets/css",favicon:"favicon.ico",sassOptions:{outputStyle:"expanded",imagePath:"../img",precision:3},jsDir:"assets/js",jsName:"app.js",syncOptions:{index:"index.html",open:!1,notify:!0},vendors:"vendors"}};
