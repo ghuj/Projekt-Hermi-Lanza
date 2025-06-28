@@ -31,7 +31,7 @@ Temporäre Gegenstände
 
 ### Git ###
 * .orig
-node_modules/
+/*node_modules/
 
 
 ### Sass ###
