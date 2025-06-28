@@ -1,10 +1,7 @@
 /*****************  CONTAINER - NAVIGATION ******************
-.main-header, .nav
-  display: flex
-  flex-direction: column
 
-.main-header
-  padding-top: 2em
+
+
 
 /***************** Base - Style ******************
 
@@ -34,60 +31,226 @@ a
 @media (min-width: 1200px)
   .container
     width: 1080px
+    justify-content: center
 
 /* --------------------------
  *  Main Styles
  *---------------------------
 
-.main-header, .nav
-  heigt: 140px
+.main-header
   display: flex
   flex-direction: column
+  position: relative
 
-.main-header
-  padding-top: 2em
-  margin-top: 5px
-  padding-top: 2em
-  
 .nav
-  background-color: white
-  margin-top: 1.5em
-  margin-bottom: 20px
-  padding: 1.5em
+  //position: grid
+  //left: 50%
+  //transform: translateX(-50%)
+  font-size: 20px
+  font-weight: bold
+  color: white
+  background-color: #425679
+  padding: 20px 40px
+  border-radius: 8px
+  flex-direction: column
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  opacity: 0.8
+
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  li
+    display: inline-block
+    margin: 10px 0
 
   a
     display: block
-    color: #797e83
+    color: #ffffff
     font-size: 1.125em
     font-weight: 300
     text-align: center
     padding: .4em
     border-bottom: 1px solid #ebecec
+    transition: all 0.3s ease-in-out
 
     &:hover
-      color: #0b0b0b
+      color: #fff
       border-bottom-color: #52bab3
+      transform: scale(1.05)
 
-/* --------------------------
- *  Media Queries
- *---------------------------
+.hamburger-menu
+  display: none
+  flex-direction: column
+  justify-content: space-between
+  width: 30px
+  height: 21px
+  background: transparent
+  border: none
+  cursor: pointer
+  padding: 0
+  position: fixed
+  top: 20px
+  right: 20px
+  z-index: 1000
+  transition: transform 0.3s ease-in-out
+
+  .bar
+    width: 100%
+    height: 3px
+    background-color: white
+    border-radius: 3px
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+    transform-origin: center
+
+  .bar:first-child
+    transform-origin: top left
+
+  .bar:last-child
+    transform-origin: bottom left
 
 @media (min-width: 769px)
   .main-header
     height: 200px
     justify-content: flex-end
-    
+
   .site-logo
     width: 140px
 
   .nav
+    display: flex
     margin-top: 3em
     flex-direction: row
     justify-content: space-around
+    text-align: center
 
     a
       border-bottom-color: transparent
 
-@media (max-width: 769px)  
+@media (max-width: 769px)
+  .hamburger-menu
+    display: flex
+
   .main-header
-    width: 80%
+    width: 100%
+    position: relative
+
+  .nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background-color: #f0f2f5
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 80px 20px 20px
+    z-index: 999
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1)
+    transform: translateY(-100%)
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+    text-align: center
+
+    ul
+      flex-direction: column
+      align-items: center
+      margin-top: 0
+      width: 100%
+
+    li
+      margin: 10px 0
+      display: block
+      width: 100%
+      opacity: 0
+      transform: translateY(20px)
+      transition: all 0.3s ease-in-out
+
+    a
+      font-size: 18px
+      color: #000000
+      padding: 10px 0
+      display: block
+      width: 100%
+      border-bottom: none
+      text-align: center
+
+      &:hover
+        color: #52bab3
+        transform: scale(1.05)
+
+  .nav.active
+    transform: translateY(0)
+
+    li
+      opacity: 1
+      transform: translateY(0)
+      transition-delay: calc(0.1s * var(--i))
+
+  .hamburger-menu.active
+    .bar:first-child
+      transform: translateY(9px) rotate(45deg)
+      background-color: #52bab3
+
+    .bar:nth-child(2)
+      opacity: 0
+      transform: scaleX(0)
+
+    .bar:last-child
+      transform: translateY(-9px) rotate(-45deg)
+      background-color: #52bab3
+
+@media (max-width: 469px)
+  .nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background-color: #f0f2f5
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 80px 20px 20px
+    z-index: 999
+    box-shadow: none
+
+    ul
+      flex-direction: column
+      align-items: center
+      margin-top: 0
+      width: 100%
+
+    li
+      margin: 10px 0
+      display: block
+      width: 100%
+
+    a
+      font-size: 18px
+      color: #000000
+      padding: 10px 0
+      display: block
+      width: 100%
+      border-bottom: none
+      text-align: center
+
+      &:hover
+        color: #52bab3
+        padding-left: 0
+        transform: scale(1.05)
+
+  .nav.active
+    right: 0
+
+    ul
+      transform: translateY(0)
+      opacity: 1
+
+    li
+      transform: translateX(0)
+      opacity: 1

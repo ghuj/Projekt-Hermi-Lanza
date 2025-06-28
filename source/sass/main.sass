@@ -1,24 +1,25 @@
-// This is the single file output by sass. It is intended to ONLY @import other files.
+// This is the single file output by sass. It is intended to ONLY @use other files.
 
 
 // 1 - TOOLS
-@import '1-tools/fonts'
-@import '1-tools/normalize'
-@import '1-tools/vars'
+//@import '1-tools/bourbon/bourbon'
+@use '1-tools/fonts'
+@use '1-tools/normalize'
+@use '1-tools/vars'
 
 
 // 2 - BASICS
-@import '2-basics/body-element'
-@import '2-basics/selection-colors'
-@import '2-basics/links'
-@import '2-basics/typography'
-@import '2-basics/example-buttons'
-@import '2-basics/navigation'
+@use '2-basics/body-element'
+@use '2-basics/selection-colors'
+@use '2-basics/links'
+@use '2-basics/typography'
+@use '2-basics/navigation'
+@use '2-basics/example-buttons'
 
 
-// 3 - Module
-@import '3-modules/galerie-module'
-@import '3-modules/contact-module'
+// 3 - Modules
+@use '3-modules/contact-module'
+@use '3-modules/galerie-module'
 
 // 4 - pages
-@import '4-pages/page-home'
+@use '4-pages/page-home'

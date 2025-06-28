@@ -1,8 +1,11 @@
+@use 'sass:color'
+@use '../1-tools/vars'
+
 a
-  color: #0074D9
+  color: vars.$link-color
   text-decoration: none
   outline: 0
 
   &:hover,
   &:focus
-    color: lighten(#0074D9, 20%)
+    color: vars.$link-hover
