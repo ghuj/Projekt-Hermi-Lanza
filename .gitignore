@@ -31,7 +31,6 @@ Temporäre Gegenstände
 
 ### Git ###
 * .orig
-/*node_modules/
 
 
 ### Sass ###
@@ -39,3 +38,4 @@ Temporäre Gegenstände
 
 
 # Ende von https://www.gitignore.io/api/macos
+node_modules
