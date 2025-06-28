@@ -4,47 +4,49 @@
  * if you find any bug or error, please submit an issue
  */
 // Include gulp plugins
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')({ lazy: true });
-var browsersync = require('browser-sync');
-var del = require('del');
-var config = require('./config.js')();
+const gulp = require('gulp');
+const browsersync = require('browser-sync').create();
+const { deleteAsync } = require('del');
+const config = require('./config.js')();
+const sass = require('gulp-sass')(require('sass'));
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const cleanCSS = require('gulp-clean-css');
+const plumber = require('gulp-plumber');
+const newer = require('gulp-newer');
+const size = require('gulp-size');
+const pug = require('gulp-pug');
+const jshint = require('gulp-jshint');
+const deporder = require('gulp-deporder');
+const stripDebug = require('gulp-strip-debug');
 
 // Configs
-var
-  devBuild = (( config.environment || process.env.NODE_ENV || 'development').trim().toLowerCase() !== 'production'),
-  source = config.source[--config.source.length] == '/' ? config.source : config.source + '/',
-  dest = config.build[--config.build.length] == '/' ? config.build : config.build + '/',
-  pkg = require('./package.json'),
+const devBuild = (config.environment.trim().toLowerCase() !== 'production');
+const source = config.source.endsWith('/') ? config.source : config.source + '/';
+const dest = config.build.endsWith('/') ? config.build : config.build + '/';
+const pkg = require('./package.json'),
   images = {
-    in: source + (config.images[--config.images.length] == '/' ? config.images + '**/*.*' : config.images + '/**/*.*'),
+    in: source + (config.images.endsWith('/') ? config.images + '**/*.*' : config.images + '/**/*.*'),
     out: dest + config.images
   },
   views = {
-    in: source + (config.views[--config.views.length] == '/' ? config.views + '*.pug' : config.views + '/*.pug'),
+    in: source + (config.views.endsWith('/') ? config.views + '*.pug' : config.views + '/*.pug'),
     out: dest,
-    watch: source + (config.views[--config.views.length] == '/' ? config.views + '**/*' : config.views + '/**/*')
+    watch: source + (config.views.endsWith('/') ? config.views + '**/*' : config.views + '/**/*')
   },
   styles = {
     in: source + config.sass,
-    watch: [source + config.sass.substring(0, (config.sass.lastIndexOf('/')+1)) + '**/*'],
-    out: dest + (config.css[--config.css.length] == '/' ? config.css : config.css + '/'),
+    watch: [source + config.sass.substring(0, (config.sass.lastIndexOf('/') + 1)) + '**/*'],
+    out: dest + (config.css.endsWith('/') ? config.css : config.css + '/'),
     sassOpt: {
       outputStyle: config.sassOptions.outputStyle || 'expanded',
       imagePath: config.sassOptions.imagePath,
       precision: config.sassOptions.precision || 3,
       errLogToConsole: true
-    },
-    pleeeaseOpt: {
-      autoprefixer: { browsers: ['last 2 versions', '> 2%'] },
-      rem: ['16px'],
-      pseudoElements: true,
-      mqpacker: true,
-      minifier: !devBuild
     }
   },
   js = {
-    in: source + (config.jsDir[--config.jsDir.length] == '/' ? config.jsDir + '**/*' : config.jsDir + '/**/*'),
+    in: source + (config.jsDir.endsWith('/') ? config.jsDir + '**/*' : config.jsDir + '/**/*'),
     out: dest + config.jsDir,
     filename: config.jsName
   },
@@ -58,9 +60,9 @@ var
   },
   pugOptions = { pretty: devBuild, basedir: source + config.views },
   vendors = {
-    in: source + (config.vendors[--config.vendors.length] == '/' ? config.vendors + '**/*' : config.vendors + '/**/*'),
-    out: dest + (config.vendors[--config.vendors.length] == '/' ? config.vendors : config.vendors + '/'),
-    watch: [source + (config.vendors[--config.vendors.length] == '/' ? config.vendors + '**/*' : config.vendors + '/**/*')]
+    in: source + (config.vendors.endsWith('/') ? config.vendors + '**/*' : config.vendors + '/**/*'),
+    out: dest + (config.vendors.endsWith('/') ? config.vendors : config.vendors + '/'),
+    watch: [source + (config.vendors.endsWith('/') ? config.vendors + '**/*' : config.vendors + '/**/*')]
   };
 
 console.log(pkg.name + ' ' + pkg.version + ' ' + config.environment + ' build');
@@ -69,124 +71,107 @@ console.log(pkg.name + ' ' + pkg.version + ' ' + config.environment + ' build');
  * Tasks
  */
 //Clean the build folder
-gulp.task('clean', function () {
-  log('-> Cleaning build folder')
-  del([
-    dest + '*'
-  ]);
+gulp.task('clean', async () => {
+  console.log('-> Cleaning build folder');
+  await deleteAsync([dest + '**/*']);
 });
 
 // Compile Javascript files
-gulp.task('js', function () {
-  if (devBuild) {
-    log('-> Compiling Javascript for Development')
-    return gulp.src(js.in)
-      .pipe($.plumber())
-      .pipe($.newer(js.out))
-      .pipe($.jshint())
-      .pipe($.jshint.reporter('jshint-stylish', { verbose: true }))
-      .pipe($.jshint.reporter('fail'))
-      .pipe($.concat(js.filename))
-      .pipe(gulp.dest(js.out));
-  } else {
-    log('-> Compiling Javascript for Production')
-    del([
-      dest + 'js/*'
-    ]);
-    return gulp.src(js.in)
-      .pipe($.plumber())
-      .pipe($.deporder())
-      .pipe($.concat(js.filename))
-      .pipe($.size({ title: 'Javascript In Size' }))
-      .pipe($.stripDebug())
-      .pipe($.uglify())
-      .pipe($.size({ title: 'Javascript Out Size' }))
-      .pipe(gulp.dest(js.out));
+gulp.task('js', async () => {
+  console.log(devBuild ? '-> Compiling Javascript for Development' : '-> Compiling Javascript for Production');
+  
+  if (!devBuild) {
+    await deleteAsync([dest + 'js/*']);
   }
+
+  return gulp.src(js.in)
+    .pipe(plumber())
+    .pipe(deporder())
+    .pipe(concat(js.filename))
+    .pipe(devBuild ? gulp.dest(js.out) : uglify().pipe(gulp.dest(js.out)));
 });
 
 // Update images on build folder
-gulp.task('images', function () {
-  return gulp.src( images.in )
-    .pipe($.newer(images.out))
+gulp.task('images', () => {
+  return gulp.src(images.in)
+    .pipe(newer(images.out))
     .pipe(gulp.dest(images.out));
 });
 
 // Update Favicon on build folder
-gulp.task('favicon', function () {
+gulp.task('favicon', () => {
   return gulp.src(source + config.favicon)
-    .pipe($.newer(dest))
+    .pipe(newer(dest))
     .pipe(gulp.dest(dest));
 });
 
 // Copy all vendors to build folder
-gulp.task('vendors', function () {
+gulp.task('vendors', () => {
   return gulp.src(vendors.in)
-    .pipe($.newer(vendors.out))
+    .pipe(newer(vendors.out))
     .pipe(gulp.dest(vendors.out));
 });
 
 //Compile Pug templates
-gulp.task('pug', function () {
-  log('-> Compiling Pug Templates')
-
-  var templates = gulp.src(views.in)
-    .pipe($.plumber())
-    .pipe($.newer(views.out));
-  if (!devBuild) {
-    log('-> Compressing templates for Production')
-    templates = templates
-      .pipe($.size({ title: 'pug Templates Before Compression' }))
-      .pipe($.pug())
-      .pipe($.size({ title: 'pug Templates After Compression' }));
-  } else {
-    templates.pipe($.pug(pugOptions));
-  }
-  return templates.pipe(gulp.dest(views.out));
+gulp.task('pug', () => {
+  console.log('-> Compiling Pug Templates');
+  return gulp.src(views.in)
+    .pipe(plumber())
+    .pipe(newer(views.out))
+    .pipe(pug(pugOptions))
+    .pipe(gulp.dest(views.out));
 });
 
 // Compile Sass styles
-gulp.task('sass', function () {
-  log('-> Compile SASS Styles')
+gulp.task('sass', () => {
   return gulp.src(styles.in)
-    .pipe($.plumber())
-    .pipe($.sass(styles.sassOpt))
-    .pipe($.size({ title: 'styles In Size' }))
-    .pipe($.pleeease(styles.pleeeaseOpt))
-    .pipe($.size({ title: 'styles Out Size' }))
+    .pipe(plumber())
+    .pipe(sass(styles.sassOpt))
+    .on('error', sass.logError)
+    .pipe(cleanCSS({
+      compatibility: 'ie11',
+      level: {
+        1: {
+          specialComments: 0
+        }
+      }
+    }))
     .pipe(gulp.dest(styles.out))
-    .pipe(browsersync.reload({ stream: true }))
-
+    .pipe(browsersync.stream());
 });
 
 // Start BrowserSync
-gulp.task('browsersync', function () {
-  log('-> Starting BrowserSync')
-  browsersync(syncOpt);
+gulp.task('browsersync', () => {
+  console.log('-> Starting BrowserSync');
+  browsersync.init(syncOpt);
 });
 
 // Build Task
-gulp.task('build', ['sass', 'pug', 'js', 'images', 'vendors', 'favicon']);
+gulp.task('build', 
+  gulp.series('clean', 
+    gulp.parallel('sass', 'pug', 'js', 'images', 'vendors', 'favicon')
+  )
+);
 
 // Watch Task
-gulp.task('watch', ['browsersync'], function () {
-  // Watch for style changes and compile
-  gulp.watch(styles.watch, ['sass']);
-  // Watch for pug changes and compile
-  gulp.watch(views.watch, ['pug', browsersync.reload]);
-  // Watch for javascript changes and compile
-  gulp.watch(js.in, ['js', browsersync.reload]);
-  // Watch for new vendors and copy
-  gulp.watch(vendors.watch, ['vendors']);
-  // Watch for new images and copy
-  gulp.watch(images.in, ['images']);
-});
+gulp.task('watch', gulp.series('build', () => {
+  browsersync.init(syncOpt);
+  
+  gulp.watch(styles.watch, gulp.series('sass'));
+  gulp.watch(views.watch, gulp.series('pug'));
+  gulp.watch(js.in, gulp.series('js'));
+  gulp.watch(vendors.watch, gulp.series('vendors'));
+  gulp.watch(images.in, gulp.series('images'));
+
+  // Watch for any changes in the dest directory
+  gulp.watch(dest + '**/*').on('change', browsersync.reload);
+}));
 
 // Compile and Watch task
-gulp.task('start', ['build', 'watch']);
+gulp.task('start', gulp.series('build', 'watch'));
 
 // Help Task
-gulp.task('help', function () {
+gulp.task('help', (done) => {
   console.log('');
   console.log('===== Help for DevTips Starter Kit =====');
   console.log('');
@@ -206,14 +191,18 @@ gulp.task('help', function () {
   console.log('        help: Print this message');
   console.log(' browsersync: Start the browsersync server');
   console.log('');
+  done(); // Signal task completion
 });
 
 // Default Task
-gulp.task('default', ['help']);
+gulp.task('default', gulp.series('help', (done) => {
+  done(); // Signal task completion
+}));
 
 /**
  * Custom functions
  */
- function log(msg) {
-   console.log(msg);
+function log(msg) {
+  console.log(msg);
 }
+
