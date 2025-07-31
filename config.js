@@ -36,6 +36,7 @@ module.exports = function() {
     css: 'assets/css',
     // Favicon
     favicon: 'favicon.ico',
+    faviconPath: 'assets/img/',
     // This are the options that will be passed to the sass compiler
     sassOptions: {
       /**
