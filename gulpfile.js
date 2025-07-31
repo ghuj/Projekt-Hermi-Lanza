@@ -126,7 +126,12 @@ gulp.task('pug', () => {
 gulp.task('sass', () => {
   return gulp.src(styles.in)
     .pipe(plumber())
-    .pipe(sass(styles.sassOpt))
+    .pipe(sass({
+      outputStyle: config.sassOptions.outputStyle || 'expanded',
+      imagePath: config.sassOptions.imagePath,
+      precision: config.sassOptions.precision || 3,
+      errLogToConsole: true
+    }))
     .on('error', sass.logError)
     .pipe(cleanCSS({
       compatibility: 'ie11',
