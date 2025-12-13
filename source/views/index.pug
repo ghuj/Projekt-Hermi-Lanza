@@ -7,206 +7,183 @@ html(lang='en')
     link(rel='shortcut icon', href='assets/img/favicon.ico')
     link(rel='stylesheet', href='assets/css/main.css')
   body
-    //if lt IE 11
-      p.browserupgrade
-        | Huch, Sie surfen ja noch mit einem alten Internet Explorer. Schonen Sie Ihre Nerven und steigen Sie auf einen modernen Browser oder den Firefox um! Oder auf Opera! Oder Safari! Aktuelle Browser bekommen sie hier:
-        a(href='http://browsehappy.com/') Browsehappy
-      style(type='text/css', media='screen').
-        .browserupgrade { background-color: yellow; }
-    section#header
-      .hero
-        h1 Hermi Lanza
+  section#header
+    .hero
+      h1 Hermi Lanza
+      header.main-header
         button.hamburger-menu(type='button' aria-label='Menu')
           span.bar
           span.bar
-        header.main-header
-          button.hamburger-menu(type='button' aria-label='Menu')
-            span.bar
-            span.bar
-            span.bar         
-          ul.nav
-            li
-              a(href='#header') Home
-            li
-              a(href='#biografie') Biografie
-            li
-              a(href='#ausstellungen') Ausstellungen
-            li
-              a(href='#gallery') Galerie
-            li
-              a(href='#contact') Kontakt
-            li
-              a(href='#impressum') Impressum
-          // index
-    section#biografie
+          span.bar         
+        ul.nav
+          li
+            a(href='#header') Home
+          li
+            a(href='#biografie') Biografie
+          li
+            a(href='#ausstellungen') Ausstellungen
+          li
+            a(href='#gallery') Galerie
+          li
+            a(href='#contact') Kontakt
+          li
+            a(href='#impressum') Impressum
+        // index
+  section#biografie
+    .content
+      .card
+        img.card-img(src='../assets/img/face-image.png' alt='')
+        h2.card-title Biografie
+        .card-content
+          p
+            | Ab 1991 intensive Auseinandersetzung mit der Malerei. Seit Jahren regelmäßiger
+            | Besuch von Seminaren bei namhaften Künstlern in der Kunstakademie Bad Reichenhall. Ebenso ein für mich wichtiges Seminar bei Prof.Giselbert Hoke - Hortus Niger, Halbenrain.
+            | Im Prozess des Schaffens, über den ständigen Abgleich von Vorstellung und Ergebnis, lernte ich, wie man es noch besser machen kann.
+          
+          h5 Arbeitstechniken:
+          p vorwiegend Acryl, Öl, Leimfarbe, Collage, etc,  
+  section#ausstellungen
       .content
         .card
           img.card-img(src='../assets/img/face-image.png' alt='')
-          h2.card-title Biografie
+          h2.card-title Ausstellungen 
           .card-content
-            p
-              | Ab 1991 intensive Auseinandersetzung mit der Malerei. Seit Jahren regelmäßiger
-              | Besuch von Seminaren bei namhaften Künstlern in der Kunstakademie Bad Reichenhall. Ebenso ein für mich wichtiges Seminar bei Prof.Giselbert Hoke - Hortus Niger, Halbenrain.
-              | Im Prozess des Schaffens, über den ständigen Abgleich von Vorstellung und Ergebnis, lernte ich, wie man es noch besser machen kann.
-            
-            h5 Arbeitstechniken:
-            p vorwiegend Acryl, Öl, Leimfarbe, Collage, etc,  
-      section#ausstellungen
-        .content
-          .card
-            img.card-img(src='../assets/img/face-image.png' alt='')
-            h2.card-title Ausstellungen 
-            .card-content
-              ol
-                li Graz- St. Veit
-                li Kulturverein Murvorstadt Graz
-                li Hausmannstätten
-                li Schloßberg-Uhrturmkasematten, Graz
-                li Cafe "Weberhaus", Weiz
-                li TEML Eisenbahnmuseum Lieboch
-                li Kunst und Wein, Schloß Harrachegg
-                li Galerie im Bayrischen Vermessungsamt München
-                li regelmäßig "Tag der offenen Tür" in meinem Atelier          
-      section#gallery
-        h2.gallery-heading
-          span.gallery-title Galerie
-        .gallery-container
-          .masonry-gallery
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-1.jpeg' alt="Kunstwerk 1" data-lightbox="gallery")
-            .gallery-item(data-category="double")
-              img(src='../assets/img/galerie/double-1.jpeg' alt="Kunstwerk 2" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-2.jpeg' alt="Kunstwerk 3" data-lightbox="gallery")
-            .gallery-item(data-category="pic")
-              img(src='../assets/img/galerie/pic-1.jpg' alt="Kunstwerk 4" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-3.jpeg' alt="Kunstwerk 5" data-lightbox="gallery")
-            .gallery-item(data-category="double")
-              img(src='../assets/img/galerie/double-2.jpeg' alt="Kunstwerk 6" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-4.jpeg' alt="Kunstwerk 7" data-lightbox="gallery")
-            .gallery-item(data-category="pic")
-              img(src='../assets/img/galerie/pic-2.jpg' alt="Kunstwerk 8" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-5.jpeg' alt="Kunstwerk 9" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-6.jpeg' alt="Kunstwerk 10" data-lightbox="gallery")
-            .gallery-item(data-category="pic")
-              img(src='../assets/img/galerie/pic-3.jpg' alt="Kunstwerk 11" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-7.jpeg' alt="Kunstwerk 12" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-8.jpeg' alt="Kunstwerk 13" data-lightbox="gallery")
-            .gallery-item(data-category="pic")
-              img(src='../assets/img/galerie/pic-4.jpg' alt="Kunstwerk 14" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-9.jpeg' alt="Kunstwerk 15" data-lightbox="gallery")
-            .gallery-item(data-category="single")
-              img(src='../assets/img/galerie/single-10.jpeg' alt="Kunstwerk 16" data-lightbox="gallery")
-            .gallery-item(data-category="pic")
-              img(src='../assets/img/galerie/pic-5.jpg' alt="Kunstwerk 17" data-lightbox="gallery")
-        
-        // Lightbox Modal
-        .lightbox-modal
-          .lightbox-content
-            .lightbox-image-container
-              img.lightbox-image(src="" alt="")
-            .lightbox-nav
-              button.lightbox-prev &lt;
-              button.lightbox-next &gt;
-            .lightbox-close &times;
-            .lightbox-counter
-              span.current 1
-              |  / 
-              span.total 17
-      section#contact
-        h1.section-header CONTACT
-        .contact-wrapper
-          //
-            --------------
-            CONTACT PAGE LEFT
-            ---------------
-          form.form-horizontal(method='post' action='mail.php')
-            .form-group
-              .col-sm-12
-                input#name.form-control(type='text' placeholder='NAME' name='name' value='')
-            .form-group
-              .col-sm-12
-                input#email.form-control(type='email' placeholder='EMAIL' name='email' value='')
-            textarea.form-control(rows='10' placeholder='MESSAGE' name='message')
-            button.btn.btn-primary.send-button(id="submit" type="submit" value="SEND")
-              i.fa.fa-paper-plane
-              span.send-text SEND
-          //
-            --------------
-            CONTACT PAGE RIGHT
-            ---------------
-          .direct-contact-container
-            ul.contact-list
-              li.list-item
-                i.fa.fa-map-marker.fa-2x
-                  span.contact-text.place Ettendorf 30 | 8510 Stainz
-              li.list-item
-                i.fa.fa-phone.fa-2x
-                  span.contact-text.phone
-                    a(href="tel:+43066473511141" title="Give me a call") (+43)&nbsp;0664&#8209;73511141
-              li.list-item
-                i.fa.fa-envelope.fa-2x
-                  span.contact-text.gmail
-                    a(href='mailto:#' title='Send me an email') h.lanza@gmx.at
-            hr
-            ul.social-media-list
-              li
-                a.contact-icon(href='#' target='_blank' aria-label='Facebook')
-                  i.fa.fa-facebook(aria-hidden='true')
-              li
-                a.contact-icon(href='#' target='_blank' aria-label='Twitter')
-                  i.fa.fa-twitter(aria-hidden='true')
-              li
-                a.contact-icon(href='#' target='_blank' aria-label='Instagram')
-                  i.fa.fa-instagram(aria-hidden='true')
-              li
-                a.contact-icon(href='#' target='_blank' aria-label='WhatsApp')
-                  i.fa.fa-whatsapp(aria-hidden='true')
-            hr
-          
-      section#impressum
-        article
-            h3 Impressum   
-
-            p 
-            strong  DSVGO Datenschutzbestimmung      
-            h5
-              a(href='#datenschutz.html') Unsere Datenschutzbestimmung 
-            
-            strong Haftung für Inhalte
-            p Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für  die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir  jedoch keine  Gewähr übernehmen.
-              
-            strong Haftung für Links
-            p
-              | Diese Webseite enthält Links zu externen Webseiten Dritter, auf deren  Inhalte wir keinen Einfluss haben. Deshalb
-              | können wir für diese fremden  Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten  Seiten ist stets
-              | der jeweilige Anbieter oder Betreiber der Seiten  verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der  Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte  waren zum Zeitpunkt der Verlinkung nicht erkennbar.  Bei bekannt werden  von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-            p
-              //strong Copyright
-                p
-                  | Jede Vervielfältigung oder Weiterverbreitung in jedem Medium als Ganzes oder in Teilen bedarf der schriftlichen Zustimmung
-                p    
-      footer
-        ul 
-          <li><a href="#header">Home </a></li>
-          <li><a href="#biografie">Biografie </a></li>
-          <li><a href="#ausstellungen">Ausstellung </a></li>
-          <li><a href="#gallery">Galerie </a></li>
-          <li><a href="#contact">Kontakt    </a></li>
-          <li><a href="#impressum">Impressum</a></li>
-        .lockup   © Hermi Lanza Alle Rechte vorbehalten.
+            ol
+              li Graz- St. Veit
+              li Kulturverein Murvorstadt Graz
+              li Hausmannstätten
+              li Schloßberg-Uhrturmkasematten, Graz
+              li Cafe "Weberhaus", Weiz
+              li TEML Eisenbahnmuseum Lieboch
+              li Kunst und Wein, Schloß Harrachegg
+              li Galerie im Bayrischen Vermessungsamt München
+              li regelmäßig "Tag der offenen Tür" in meinem Atelier          
+  section#gallery
+    h2.gallery-heading
+      span.gallery-title Galerie
+    .gallery-container
+      .masonry-gallery
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-1.jpeg' alt="Kunstwerk 1" data-lightbox="gallery")
+        .gallery-item(data-category="double")
+          img(src='../assets/img/galerie/double-1.jpeg' alt="Kunstwerk 2" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-2.jpeg' alt="Kunstwerk 3" data-lightbox="gallery")
+        .gallery-item(data-category="pic")
+          img(src='../assets/img/galerie/pic-1.jpg' alt="Kunstwerk 4" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-3.jpeg' alt="Kunstwerk 5" data-lightbox="gallery")
+        .gallery-item(data-category="double")
+          img(src='../assets/img/galerie/double-2.jpeg' alt="Kunstwerk 6" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-4.jpeg' alt="Kunstwerk 7" data-lightbox="gallery")
+        .gallery-item(data-category="pic")
+          img(src='../assets/img/galerie/pic-2.jpg' alt="Kunstwerk 8" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-5.jpeg' alt="Kunstwerk 9" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-6.jpeg' alt="Kunstwerk 10" data-lightbox="gallery")
+        .gallery-item(data-category="pic")
+          img(src='../assets/img/galerie/pic-3.jpg' alt="Kunstwerk 11" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-7.jpeg' alt="Kunstwerk 12" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-8.jpeg' alt="Kunstwerk 13" data-lightbox="gallery")
+        .gallery-item(data-category="pic")
+          img(src='../assets/img/galerie/pic-4.jpg' alt="Kunstwerk 14" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-9.jpeg' alt="Kunstwerk 15" data-lightbox="gallery")
+        .gallery-item(data-category="single")
+          img(src='../assets/img/galerie/single-10.jpeg' alt="Kunstwerk 16" data-lightbox="gallery")
+        .gallery-item(data-category="pic")
+          img(src='../assets/img/galerie/pic-5.jpg' alt="Kunstwerk 17" data-lightbox="gallery")
+    
+    // Lightbox Modal
+    .lightbox-modal
+      .lightbox-content
+        .lightbox-image-container
+          img.lightbox-image(src="" alt="")
+        .lightbox-nav
+          button.lightbox-prev &lt;
+          button.lightbox-next &gt;
+        .lightbox-close &times;
+        .lightbox-counter
+          span.current 1
+          |  / 
+          span.total 17
+  section#contact
+    h1.section-header CONTACT
+    .contact-wrapper
+      //
+        --------------
+        CONTACT PAGE LEFT
+        ---------------
+      form.form-horizontal(method='post' action='mail.php')
+        .form-group
+          .col-sm-12
+            input#name.form-control(type='text' placeholder='NAME' name='name' value='')
+        .form-group
+          .col-sm-12
+            input#email.form-control(type='email' placeholder='EMAIL' name='email' value='')
+        textarea.form-control(rows='10' placeholder='MESSAGE' name='message')
+        button.btn.btn-primary.send-button(id="submit" type="submit" value="SEND")
+          i.fa.fa-paper-plane
+          span.send-text SEND
+      //
+        --------------
+        CONTACT PAGE RIGHT
+        ---------------
+      .direct-contact-container
+        ul.contact-list
+          li.list-item
+            i.fa.fa-map-marker.fa-2x
+              span.contact-text.place Ettendorf 30 | 8510 Stainz
+          li.list-item
+            i.fa.fa-phone.fa-2x
+              span.contact-text.phone
+                a(href="tel:+43066473511141" title="Give me a call") (+43)&nbsp;0664&#8209;73511141
+          li.list-item
+            i.fa.fa-envelope.fa-2x
+              span.contact-text.gmail
+                a(href='mailto:#' title='Send me an email') h.lanza@gmx.at
+        hr
       
-    // end. wrapper
+  section#impressum
+    article
+        h3 Impressum   
 
-    script(src="assets/js/jquery-2.1.4.min.js")
-    script(src="assets/js/functions.js")
-    script(src="assets/js/app.js")
-    script(src="assets/js/navigation.js")
-    script(src="assets/js/gallery.js")
+        p 
+        strong  DSVGO Datenschutzbestimmung      
+        h5
+          a(href='#datenschutz.html') Unsere Datenschutzbestimmung 
+        
+        strong Haftung für Inhalte
+        p Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für  die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir  jedoch keine  Gewähr übernehmen.
+          
+        strong Haftung für Links
+        p
+          | Diese Webseite enthält Links zu externen Webseiten Dritter, auf deren  Inhalte wir keinen Einfluss haben. Deshalb
+          | können wir für diese fremden  Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten  Seiten ist stets
+          | der jeweilige Anbieter oder Betreiber der Seiten  verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der  Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte  waren zum Zeitpunkt der Verlinkung nicht erkennbar.  Bei bekannt werden  von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+        p
+          //strong Copyright
+            p
+              | Jede Vervielfältigung oder Weiterverbreitung in jedem Medium als Ganzes oder in Teilen bedarf der schriftlichen Zustimmung
+            p    
+  footer
+    ul 
+      <li><a href="#header">Home </a></li>
+      <li><a href="#biografie">Biografie </a></li>
+      <li><a href="#ausstellungen">Ausstellung </a></li>
+      <li><a href="#gallery">Galerie </a></li>
+      <li><a href="#contact">Kontakt    </a></li>
+      <li><a href="#impressum">Impressum</a></li>
+    .lockup   © Hermi Lanza Alle Rechte vorbehalten.
+  
+// end. wrapper
+
+script(src="assets/js/jquery-3.7.1.min.js")
+script(src="assets/js/functions.js")
+script(src="assets/js/app.js")
+script(src="assets/js/navigation.js")
+script(src="assets/js/gallery.js")
