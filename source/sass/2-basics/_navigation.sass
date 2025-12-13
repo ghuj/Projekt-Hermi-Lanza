@@ -51,6 +51,7 @@ a
   color: vars.$black
   background-color: vars.$white
   padding: 10px
+  margin-bottom:3em
   border-radius: 8px
   flex-direction: column
   align-items: center
@@ -97,13 +98,13 @@ a
   position: fixed
   top: 20px
   right: 20px
-  z-index: 1000
+  z-index: 1001
   transition: transform 0.3s ease-in-out
 
   .bar
     width: 100%
     height: 3px
-    background-color: white
+    background-color: #52bab3
     border-radius: 3px
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
     transform-origin: center
@@ -124,7 +125,6 @@ a
 
   .nav
     display: flex
-    margin-top: 3em
     flex-direction: row
     justify-content: space-around
     text-align: center
@@ -134,7 +134,7 @@ a
 
 @media (max-width: 769px)
   .hamburger-menu
-    display: flex
+    display: flex !important
 
   .main-header
     width: 100%

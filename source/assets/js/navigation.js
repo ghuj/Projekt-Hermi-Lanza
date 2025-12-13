@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav a');
 
+    // Check if elements exist
+    if (!hamburger || !nav) {
+        console.error('Navigation elements not found');
+        return;
+    }
+
     // Add index to each li element for staggered animation
     document.querySelectorAll('.nav li').forEach((li, index) => {
         li.style.setProperty('--i', index);
@@ -41,6 +47,22 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
+        
+        console.log('Hamburger clicked'); // Debug log
+        
+        if (nav.classList.contains('active')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    // Add touch support for mobile devices
+    hamburger.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        console.log('Hamburger touched'); // Debug log
         
         if (nav.classList.contains('active')) {
             closeMenu();
