@@ -13,11 +13,10 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const cleanCSS = require('gulp-clean-css');
 const plumber = require('gulp-plumber');
-const newer = require('gulp-newer');
+const changed = require('gulp-changed').default || require('gulp-changed');
 const size = require('gulp-size');
 const pug = require('gulp-pug');
 const jshint = require('gulp-jshint');
-const deporder = require('gulp-deporder');
 const stripDebug = require('gulp-strip-debug');
 
 // Configs
@@ -86,7 +85,6 @@ gulp.task('js', async () => {
 
   return gulp.src(js.in)
     .pipe(plumber())
-    .pipe(deporder())
     .pipe(concat(js.filename))
     .pipe(devBuild ? gulp.dest(js.out) : uglify().pipe(gulp.dest(js.out)));
 });
@@ -94,21 +92,30 @@ gulp.task('js', async () => {
 // Update images on build folder
 gulp.task('images', () => {
   return gulp.src(images.in)
-    .pipe(newer(images.out))
+    .pipe(changed(images.out))
     .pipe(gulp.dest(images.out));
 });
 
 // Update Favicon on build folder
 gulp.task('favicon', () => {
   return gulp.src(source + config.favicon)
-    .pipe(newer(dest))
+    .pipe(changed(dest))
     .pipe(gulp.dest(dest));
 });
 
 // Copy all vendors to build folder
-gulp.task('vendors', () => {
+gulp.task('vendors', (done) => {
+  const fs = require('fs');
+  const path = require('path');
+  const vendorSourcePath = path.join(source, config.vendors);
+  
+  if (!fs.existsSync(vendorSourcePath)) {
+    console.log('-> Vendors directory does not exist, skipping...');
+    return done();
+  }
+  
   return gulp.src(vendors.in)
-    .pipe(newer(vendors.out))
+    .pipe(changed(vendors.out))
     .pipe(gulp.dest(vendors.out));
 });
 
@@ -117,7 +124,7 @@ gulp.task('pug', () => {
   console.log('-> Compiling Pug Templates');
   return gulp.src(views.in)
     .pipe(plumber())
-    .pipe(newer(views.out))
+    .pipe(changed(views.out))
     .pipe(pug(pugOptions))
     .pipe(gulp.dest(views.out));
 });
