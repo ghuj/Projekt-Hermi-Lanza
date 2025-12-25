@@ -1,5 +1,5 @@
 @use "../1-tools/vars"
-@use "sass:color"
+//@use "sass:color"
 /*****************  CONTAINER - NAVIGATION ******************
 
 
@@ -7,7 +7,7 @@
 
 /***************** Base - Style ******************
 
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900")
+
 
 *
   box-sizing: border-box
@@ -18,7 +18,7 @@ ul, li
   list-style-type: none
 
 a
-  color: #656a6e
+  color: vars.$darkgray
   text-decoration: none
   font-weight: 400
 
@@ -82,7 +82,7 @@ a
 
     &:hover
       color: vars.$black
-      border-bottom-color: #52bab3
+      border-bottom-color: vars.$teal
       transform: scale(1.05)
 
 .hamburger-menu
@@ -104,7 +104,7 @@ a
   .bar
     width: 100%
     height: 3px
-    background-color: #52bab3
+    background-color: vars.$teal
     border-radius: 3px
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
     transform-origin: center
@@ -146,7 +146,7 @@ a
     left: 0
     width: 100vw
     height: 100vh
-    background-color: #f0f2f5
+    background-color: vars.$white
     display: flex
     justify-content: center
     align-items: center
@@ -173,7 +173,7 @@ a
 
     a
       font-size: 18px
-      color: #000000
+      color: vars.$black
       padding: 10px 0
       display: block
       width: 100%
@@ -181,7 +181,7 @@ a
       text-align: center
 
       &:hover
-        color: #52bab3
+        color: vars.$teal
         transform: scale(1.05)
 
   .nav.active
@@ -195,7 +195,7 @@ a
   .hamburger-menu.active
     .bar:first-child
       transform: translateY(9px) rotate(45deg)
-      background-color: #52bab3
+      background-color: vars.$teal
 
     .bar:nth-child(2)
       opacity: 0
@@ -203,7 +203,7 @@ a
 
     .bar:last-child
       transform: translateY(-9px) rotate(-45deg)
-      background-color: #52bab3
+      background-color: vars.$teal
 
 @media (max-width: 469px)
   .nav
@@ -212,7 +212,7 @@ a
     left: 0
     width: 100vw
     height: 100vh
-    background-color: #f0f2f5
+    background-color: vars.$white
     display: flex
     justify-content: center
     align-items: center
@@ -233,7 +233,7 @@ a
 
     a
       font-size: 18px
-      color: #000000
+      color: vars.$black
       padding: 10px 0
       display: block
       width: 100%
@@ -241,7 +241,7 @@ a
       text-align: center
 
       &:hover
-        color: #52bab3
+        color: vars.$teal
         padding-left: 0
         transform: scale(1.05)
 
