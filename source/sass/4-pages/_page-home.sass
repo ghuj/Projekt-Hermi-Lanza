@@ -1,5 +1,5 @@
 @use "../1-tools/vars"
-@use "sass:color"
+//@use "sass:color"
 
 //************  H E A D E R ******************************//
 
@@ -94,8 +94,8 @@ footer
   height: 80px
   text-align: center
   padding-top: 15px
-  background-color: #444444
-  color: #ffff
+  background-color: vars.$darkishgray
+  color: vars.$white
   ul
     margin: 0px
   li
@@ -105,7 +105,7 @@ footer
     &:last-child
       border-right: none
     a
-      color: #fff
+      color: vars.$white
       padding: 0 4px 0 5px
       margin: 0 0 0 0px
       &:hover
@@ -116,7 +116,7 @@ footer
 .lockup
   //padding: 10px 0 0 0
   text-align: center
-  color: #fff
+  color: vars.$white
 
 //************  MEDIA QUERIES ******************************//
 
@@ -183,7 +183,7 @@ footer
       padding: 20px
 
       a
-        color: #fff
+        color: vars.$white
 
         &:hover
           color: vars.$link-hover
