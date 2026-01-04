@@ -9,7 +9,7 @@ html(lang='en')
   body
   section#header
     .hero
-      h1 Hermi Lanza
+      h1 Hermi Lanza 
       header.main-header
         button.hamburger-menu(type='button' aria-label='Menu')
           span.bar
@@ -151,9 +151,9 @@ html(lang='en')
     article
         h3 Impressum   
         p 
-        strong  DSVGO Datenschutzbestimmung      
+        strong  DSGVO Datenschutzbestimmung      
         h5
-          a(href='#datenschutz.html') Unsere Datenschutzbestimmung 
+          a(href='datenschutz.html') Unsere Datenschutzbestimmung 
         
         strong Haftung für Inhalte
         p Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für  die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir  jedoch keine  Gewähr übernehmen.
@@ -170,12 +170,20 @@ html(lang='en')
             p    
   footer
     ul 
-      <li><a href="#header">Home </a></li>
-      <li><a href="#biografie">Biografie </a></li>
-      <li><a href="#ausstellungen">Ausstellung </a></li>
-      <li><a href="#gallery">Galerie </a></li>
-      <li><a href="#contact">Kontakt    </a></li>
-      <li><a href="#impressum">Impressum</a></li>
+      li
+        a(href='#header') Home
+      li
+        a(href='#biografie') Biografie
+      li
+        a(href='#ausstellungen') Ausstellung
+      li
+        a(href='#gallery') Galerie
+      li
+        a(href='#contact') Kontakt
+      li
+        a(href='#impressum') Impressum
+      li
+        a(href='datenschutz.html') Datenschutz
     .lockup   © Hermi Lanza Alle Rechte vorbehalten.
   
 // end. wrapper
