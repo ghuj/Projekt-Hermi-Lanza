@@ -5,7 +5,7 @@
 
 .hero
   width: 100vw
-  height: 50vh
+  height: 50vh 
   grid-area: hero
   background:
     image: url(../img/hero-image.jpg)
@@ -63,6 +63,9 @@ section
   grid-area: title
   margin-top: 1.0em
   font-weight: 300
+  text-decoration: underline #39CCCC 2px
+  text-decoration-style: wavy
+  text-underline-offset: 13px
 
 .card-content
   grid-area: content
@@ -87,6 +90,10 @@ article
 #impressum
   display: grid
   justify-content: center
+  h3
+    text-decoration: underline #39CCCC 2px
+    text-decoration-style: wavy
+    text-underline-offset: 13px
 
 //************ F O O T E R - E L E M E N T ******************************// 
 
@@ -94,7 +101,7 @@ footer
   height: 80px
   text-align: center
   padding-top: 15px
-  background-color: vars.$darkishgray
+  background-color: vars.$black
   color: vars.$white
   ul
     margin: 0px

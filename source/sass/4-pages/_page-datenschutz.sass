@@ -1,14 +1,19 @@
-// Datenschutz (Privacy Policy) Page Styles
+@use "../1-tools/vars"
+
+/************  D A T E N S C H U T Z   P R I V A C Y   P O L I C Y ******************************/
+  
 
 #datenschutz
   max-width: 1200px
   padding: 40px 20px
+  margin: auto
 
   article.datenschutz-content
     width: 80vw
     height: auto
-    background: #fff
+    background: vars.$white
     padding: 40px
+    margin: 0 auto
     border-radius: 8px
     box-shadow: 0 2px 10px rgba(0,0,0,0.1)
 
@@ -16,37 +21,37 @@
       font-size: 2.5rem
       margin-bottom: 30px
       color: #2c3e50
-      border-bottom: 3px solid #3498db
+      border-bottom: 3px solid #39CCCC
       padding-bottom: 15px
 
     h2
       font-size: 1.8rem
       margin-top: 40px
       margin-bottom: 20px
-      color: #34495e
+      color: vars.$spelunking
 
     h3
       font-size: 1.4rem
       margin-top: 30px
       margin-bottom: 15px
-      color: #34495e
+      color: vars.$spelunking
 
     h4
       font-size: 1.2rem
       margin-top: 20px
       margin-bottom: 10px
-      color: #555
+      color: vars.$stonegrey
 
     h5
       font-size: 1rem
       margin-top: 15px
       margin-bottom: 10px
-      color: #555
+      color: vars.$stonegrey
 
     p
       line-height: 1.8
       margin-bottom: 15px
-      color: #333
+      color: vars.$coldgrey
       text-align: justify
 
     ul, ol
@@ -56,24 +61,24 @@
       li
         line-height: 1.8
         margin-bottom: 10px
-        color: #333
+        color: vars.$coldgrey
 
     a
-      color: #3498db
+      color: vars.$dayflower
       text-decoration: none
       transition: color 0.3s ease
       
       &:hover
-        color: #2980b9
+        color: vars.$dayflower
         text-decoration: underline
 
     strong
       font-weight: 600
-      color: #2c3e50
+      color: vars.$bluewingteal
 
     em
       font-style: italic
-      color: #7f8c8d
+      color: vars.$ghostgray
 
   // Responsive Design
   @media (max-width: 768px)
