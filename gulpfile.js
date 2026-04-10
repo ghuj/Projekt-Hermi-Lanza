@@ -14,10 +14,10 @@ const uglify = require('gulp-uglify');
 const cleanCSS = require('gulp-clean-css');
 const plumber = require('gulp-plumber');
 const changed = require('gulp-changed').default || require('gulp-changed');
-const size = require('gulp-size');
+const imagemin = require('gulp-imagemin');
 const pug = require('gulp-pug');
-const jshint = require('gulp-jshint');
-const stripDebug = require('gulp-strip-debug');
+
+const imgDir = config.images.replace(/\/$/, '');
 
 // Configs
 const devBuild = (config.environment.trim().toLowerCase() !== 'production');
@@ -25,8 +25,9 @@ const source = config.source.endsWith('/') ? config.source : config.source + '/'
 const dest = config.build.endsWith('/') ? config.build : config.build + '/';
 const pkg = require('./package.json'),
   images = {
-    in: source + (config.images.endsWith('/') ? config.images + '**/*.*' : config.images + '/**/*.*'),
-    out: dest + config.images
+    // Brace-Glob: alle gängigen Bildformate (Gulp 5 braucht bei Binärdateien base + encoding)
+    in: source + imgDir + '/**/*.{jpg,jpeg,png,gif,svg,webp}',
+    out: dest + imgDir
   },
   views = {
     in: source + (config.views.endsWith('/') ? config.views + '*.pug' : config.views + '/*.pug'),
@@ -80,7 +81,7 @@ gulp.task('js', async () => {
   console.log(devBuild ? '-> Compiling Javascript for Development' : '-> Compiling Javascript for Production');
   
   if (!devBuild) {
-    await deleteAsync([dest + 'js/*']);
+    await deleteAsync([js.out + '/*']);
   }
 
   return gulp.src(js.in)
@@ -89,11 +90,31 @@ gulp.task('js', async () => {
     .pipe(devBuild ? gulp.dest(js.out) : uglify().pipe(gulp.dest(js.out)));
 });
 
-// Update images on build folder
+// Images: kopieren nach build/ mit korrektem Pfad + Kompression (JPEG/PNG/GIF/SVG)
 gulp.task('images', () => {
-  return gulp.src(images.in)
+  const io = config.imageOptimization || {};
+  const jpegQuality = devBuild
+    ? (io.jpegQuality != null ? io.jpegQuality : 85)
+    : (io.productionJpegQuality != null ? io.productionJpegQuality : 78);
+  const pngLevel = devBuild
+    ? (io.pngOptimizationLevel != null ? io.pngOptimizationLevel : 4)
+    : (io.productionPngLevel != null ? io.productionPngLevel : 6);
+  console.log('-> Images: optimieren (JPEG q=' + jpegQuality + ', PNG level ' + pngLevel + ')');
+  return gulp.src(images.in, { base: source, encoding: false })
+    .pipe(plumber())
     .pipe(changed(images.out))
-    .pipe(gulp.dest(images.out));
+    .pipe(imagemin([
+      imagemin.mozjpeg({ quality: jpegQuality, progressive: true }),
+      imagemin.optipng({ optimizationLevel: pngLevel }),
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: false },
+          { cleanupIDs: false }
+        ]
+      })
+    ], { verbose: devBuild }))
+    .pipe(gulp.dest(dest));
 });
 
 // Update Favicon on build folder
@@ -194,12 +215,12 @@ gulp.task('help', (done) => {
   console.log('          js: Compile the JavaScript files');
   console.log('        pug: Compile the Pug templates');
   console.log('        sass: Compile the Sass styles');
-  console.log('      images: Copy the newer to the build folder');
+  console.log('      images: Optimize & copy images to ./build');
   console.log('     favicon: Copy the favicon to the build folder');
   console.log('     vendors: Copy the vendors to the build folder');
   console.log('       build: Build the project');
   console.log('       watch: Watch for any changes on the each section');
-  console.log('       start: Compile and watch for changes (for dev)');
+  console.log('       start: Build + BrowserSync + watch (use: npm start)');
   console.log('        help: Print this message');
   console.log(' browsersync: Start the browsersync server');
   console.log('');

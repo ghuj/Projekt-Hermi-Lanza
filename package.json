@@ -6,9 +6,9 @@
   "main": "build/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp",
+    "start": "gulp start",
     "build": "gulp build",
-    "dev": "gulp dev"
+    "dev": "gulp watch"
   },
   "keywords": [
     "boilerplate",
@@ -24,25 +24,16 @@
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "del": "^8.0.1",
-    "glob": "^13.0.0",
     "gulp": "^5.0.1",
     "gulp-changed": "^5.0.4",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-jshint": "^2.1.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^6.0.1",
-    "gulp-size": "^5.0.0",
-    "gulp-strip-debug": "^7.0.0",
     "gulp-uglify": "^3.0.2",
-    "jshint": "^2.13.6",
-    "jshint-stylish": "^2.2.1",
-    "rimraf": "^6.1.2",
     "sass": "^1.97.1"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
-  "dependencies": {
-    "npm-check-updates": "^19.2.1"
-  }
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

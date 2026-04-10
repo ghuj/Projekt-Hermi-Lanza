@@ -37,6 +37,17 @@ module.exports = function() {
     // Favicon
     favicon: 'favicon.ico',
     faviconPath: 'assets/img/',
+    /**
+     * Bildoptimierung beim Gulp-Build (gulp-imagemin).
+     * jpegQuality: 1–100 (höher = bessere Qualität, größere Dateien).
+     * productionJpegQuality: bei environment production
+     */
+    imageOptimization: {
+      jpegQuality: 85,
+      productionJpegQuality: 78,
+      pngOptimizationLevel: 4,
+      productionPngLevel: 6
+    },
     // This are the options that will be passed to the sass compiler
     sassOptions: {
       /**
