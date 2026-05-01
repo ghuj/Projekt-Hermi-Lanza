@@ -32,7 +32,7 @@ html(lang='en')
   section#biografie
     .content
       .card
-        img.card-img(src='assets/img/bild_biografie.png' alt='')
+        img.card-img(src='assets/img/bild_biografie.webp' alt='')
         h2 Biografie
         .card-content
           p
@@ -45,8 +45,8 @@ html(lang='en')
   section#ausstellungen
     .content
       .card
-        img.card-img(src='assets/img/bild_ausstellung.png' alt='')
-        h2.card-title Ausstellungen 
+        img.card-img(src='assets/img/bild_ausstellung.webp' alt='')
+        h2 Ausstellungen 
         .card-content
           ol
             li Graz- St. Veit
@@ -60,11 +60,39 @@ html(lang='en')
             li regelmäßig "Tag der offenen Tür" in meinem Atelier
   section#gallery
     h2 Galerie
-      
-    
-    
-        
-    
+    //- .wrapper muss INNERHALB .lightbox stehen (CSS: .lightbox .wrapper, JS: lightbox.querySelector)
+    .lightbox
+      .wrapper
+        #modals
+          .buttons
+            i.close-icon.fa.fa-times(aria-label='Schließen' role='button' tabindex='0')
+        .preview-img
+          .img
+            img(src='' alt='')
+    .masonry-gallery
+      ul.images
+        li.img
+          img(src='assets/img/images /img-1.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-2.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-3.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-4.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-5.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-6.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-7.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-8.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-9.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-10.jpg' alt='')
+        li.img
+          img(src='assets/img/images /img-12.jpg' alt='')
   section#contact
     h1.section-header CONTACT
     .contact-wrapper
@@ -142,4 +170,8 @@ html(lang='en')
   
 // end. wrapper
 
+script(src="assets/js/function.js")
+script(src="assets/js/gallery.js")
+script(src="assets/js/navigation.js")
 script(src="assets/js/app.js")
+

@@ -1,7 +1,8 @@
 @use "../1-tools/vars"
+/* Import Google font - Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap')
 
 /************  G A L L E R Y ******************************/
-
 
 *
   box-sizing: border-box
@@ -9,9 +10,6 @@
 // Gallery Heading Style
 
 #gallery
-  max-width: 100%
-  width: 100%
-  height: auto
   position: relative
   padding: 0% 5% 10% 5%
   background: #f8f9fa
@@ -24,16 +22,151 @@
     display: inline-block
     text-decoration: underline #39CCCC 2px
     text-decoration-style: wavy
-    text-underline-offset: 8px
+    text-underline-offset: 9px
     text-align: center
     margin-bottom: 40px
-    position: relative
-    &::after
-      content: ''
-      position: absolute
-      bottom: -8px
-      left: 0
-      width: 100%
-      height: 3px
-      border-radius: 2px
 
+/* Masonry image gallery styling
+
+.masonry-gallery
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .images
+    gap: 15px
+    max-width: 85%
+    margin: 40px 0
+    columns: 5 310px
+    list-style: none
+
+    .img
+      display: flex
+      cursor: pointer
+      overflow: hidden
+      position: relative
+      margin-bottom: 14px
+      border-radius: 4px
+
+    img
+      width: 100%
+      transition: transform 0.2s ease
+
+    .img:hover img
+      transform: scale(1.1)
+
+/* Image lightbox styling
+
+.lightbox
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 5
+  position: fixed
+  visibility: hidden
+  background: rgba(0, 0, 0, 0.65)
+
+  &.show
+    visibility: visible
+
+  .wrapper
+    position: fixed
+    left: 50%
+    top: 50%
+    width: 100vw
+    height: 100vh
+    padding: 20px
+    display: flex
+    flex-direction: column
+    box-sizing: border-box
+
+    /*max-width: 850px;
+    background: #fff
+    border-radius: 6px
+    opacity: 0
+    pointer-events: none
+    transform: translate(-50%, -50%) scale(0.9)
+    transition: transform 0.1s ease
+    background-color: rgba(20, 19, 19, 0.8)
+
+  &.show .wrapper
+    opacity: 1
+    pointer-events: auto
+    transform: translate(-50%, -50%) scale(1)
+
+.wrapper
+  \:where( #modals, .details)
+    display: flex
+    align-items: center
+
+  #modals
+    justify-content: flex-start
+
+#modals
+  .details
+    i
+      font-size: 1.7rem
+
+    span
+      font-size: 1.2rem
+      margin-left: 10px
+.buttons i
+  height: 40px
+  width: 40px
+  cursor: pointer
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: #000
+  margin-left: 10px
+  background: #fff
+  font-size: 1.5rem
+  font-weight: 700
+  line-height: 1
+  text-align: center
+  border-radius: 4px
+  transition: 0.2s ease
+  &:hover
+    background: #39CCCC
+    color: #fff
+  &:focus-visible
+    outline: 2px solid #39CCCC
+    outline-offset: 2px
+    
+.wrapper .preview-img
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 25px
+  flex: 1 1 auto
+  min-height: 0
+
+.preview-img
+  .img
+    max-height: 65vh
+    max-width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+  img
+    max-width: 100%
+    max-height: 65vh
+    width: auto
+    height: auto
+    object-fit: contain
+
+/* Responsive media query code
+@media screen and (max-width: 688px)
+  .lightbox .wrapper
+    padding: 12px
+    max-width: calc(100% - 26px)
+
+  .wrapper .preview-img
+    margin-top: 15px
+
+  .gallery .images
+    max-width: 100%
+    padding: 0 13px
+    margin-top: 20px
